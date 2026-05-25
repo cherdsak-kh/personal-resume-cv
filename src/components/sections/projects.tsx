@@ -38,12 +38,12 @@ export function ProjectsSection() {
               </div>
               <div className="flex space-x-3 text-slate-400 dark:text-slate-500">
                 {project.github && (
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" title="View Source Code" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                     <GithubIcon className="w-5 h-5" />
                   </a>
                 )}
                 {project.link && (
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" title="View Documentation" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                     <ExternalLink className="w-5 h-5" />
                   </a>
                 )}

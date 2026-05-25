@@ -189,10 +189,11 @@ export const projects: Project[] = [
   {
     title: "PinnitApp",
     description: {
-      en: "A location saving application that allows users to save favorite spots on a map, and easily view and manage their pins.",
-      th: "แอปพลิเคชันบันทึกตำแหน่งที่ชอบบนแผนที่ ช่วยให้ผู้ใช้สามารถบันทึก ดู และจัดการหมุด (Pins) ของตัวเองได้อย่างรวดเร็วและง่ายดาย"
+      en: "A cross-platform mobile application for pinning favorite locations on a map, featuring offline support with local storage and cloud synchronization via Supabase.",
+      th: "แอปพลิเคชันปักหมุดตำแหน่งบนแผนที่ (Mobile App) รองรับการใช้งานทั้งแบบออฟไลน์ (Local Storage) และการซิงค์ข้อมูลผ่านระบบคลาวด์ด้วยบัญชีผู้ใช้ (Supabase)"
     },
-    techStack: ["Node.js", "Frontend", "Database", "Map API"],
+    techStack: ["React Native", "Expo", "TypeScript", "Supabase", "Maps API"],
+    link: "/pinnitapp-docs.pdf",
     github: "https://github.com/cherdsak-kh/PinnitApp"
   },
   {
