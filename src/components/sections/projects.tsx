@@ -6,6 +6,7 @@ import { projects } from "@/lib/resume-data";
 import { SectionTitle } from "@/components/ui/section-title";
 import { Badge } from "@/components/ui/badge";
 import { FolderGit2, ExternalLink } from "lucide-react";
+import Link from "next/link";
 
 // Inline SVG for GitHub
 const GithubIcon = ({ className }: { className?: string }) => (
@@ -43,9 +44,15 @@ export function ProjectsSection() {
                   </a>
                 )}
                 {project.link && (
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" title="View Documentation" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                    <ExternalLink className="w-5 h-5" />
-                  </a>
+                  project.link.startsWith("/") ? (
+                    <Link href={project.link} title="View Documentation" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      <ExternalLink className="w-5 h-5" />
+                    </Link>
+                  ) : (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" title="View Documentation" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      <ExternalLink className="w-5 h-5" />
+                    </a>
+                  )
                 )}
               </div>
             </div>

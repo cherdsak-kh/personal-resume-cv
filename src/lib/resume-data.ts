@@ -193,7 +193,7 @@ export const projects: Project[] = [
       th: "แอปพลิเคชันปักหมุดตำแหน่งบนแผนที่ (Mobile App) รองรับการใช้งานทั้งแบบออฟไลน์ (Local Storage) และการซิงค์ข้อมูลผ่านระบบคลาวด์ด้วยบัญชีผู้ใช้ (Supabase)"
     },
     techStack: ["React Native", "Expo", "TypeScript", "Supabase", "Maps API"],
-    link: "/pinnitapp-docs.pdf",
+    link: "/projects/pinnitapp",
     github: "https://github.com/cherdsak-kh/PinnitApp"
   },
   {
