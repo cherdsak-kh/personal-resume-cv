@@ -7,7 +7,7 @@
 
 เว็บไซต์ Portfolio และ Resume ส่วนตัวที่พัฒนาด้วย **Next.js (App Router)** ออกแบบมาเพื่อนำเสนอประสบการณ์ทำงาน ทักษะ และผลงาน (Projects) อย่างมืออาชีพ รูปแบบ Single-page Scroll ที่ไหลลื่น พร้อมเทคโนโลยีล้ำสมัย
 
-> 🌐 **Live Demo:** [ดูเว็บไซต์จริงได้ที่นี่ (ใส่ลิงก์ Vercel ของคุณ)](https://your-domain.com)
+> 🌐 **Live Demo:** [https://cherdsak.vercel.app/](https://cherdsak.vercel.app/)
 
 ---
 

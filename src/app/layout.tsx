@@ -11,7 +11,7 @@ const sarabun = Sarabun({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://your-domain.com"), // TODO: Update with actual domain
+  metadataBase: new URL("https://cherdsak.vercel.app"),
   title: "Cherdsak Kh. | Backend & AI Systems Engineer",
   description: "Portfolio and Resume of Cherdsak Kh., a Software Engineer specializing in Python, Node.js, DevOps, and Agentic AI Architecture.",
   keywords: ["Cherdsak Khamlai", "Backend Developer", "AI Engineer", "Software Engineer", "Resume", "Portfolio", "Thailand", "Node.js", "Python", "FastAPI"],
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cherdsak Kh. | Backend & AI Systems Engineer",
     description: "Portfolio and Resume of Cherdsak Kh., a Software Engineer specializing in Python, Node.js, DevOps, and Agentic AI Architecture.",
-    url: "https://your-domain.com", // TODO: Update with actual domain
+    url: "https://cherdsak.vercel.app",
     siteName: "Cherdsak Kh. Portfolio",
     images: [
       {
