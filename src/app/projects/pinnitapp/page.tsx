@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, X } from "lucide-react";
+import { ArrowLeft, X, ZoomIn, ZoomOut, RotateCcw } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const ImageGrid = ({ images, onImageClick }: { images: string[], onImageClick: (src: string) => void }) => (
@@ -26,6 +26,7 @@ const ImageGrid = ({ images, onImageClick }: { images: string[], onImageClick: (
 
 export default function PinnitAppArticle() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [scale, setScale] = useState(1);
 
   return (
     <div className="min-h-screen pt-24 pb-16 px-4 md:px-8 max-w-4xl mx-auto">
@@ -161,8 +162,8 @@ export default function PinnitAppArticle() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={() => setSelectedImage(null)}
-            className="fixed inset-0 z-100 bg-slate-900/90 backdrop-blur-sm flex items-center justify-center p-4 cursor-pointer"
+            onClick={() => { setSelectedImage(null); setScale(1); }}
+            className="fixed inset-0 z-100 bg-slate-900/90 backdrop-blur-sm flex items-center justify-center p-4 cursor-pointer overflow-hidden"
           >
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
@@ -170,19 +171,62 @@ export default function PinnitAppArticle() {
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ type: "spring", stiffness: 300, damping: 25 }}
               onClick={(e) => e.stopPropagation()}
-              className="relative max-w-4xl max-h-[90vh] w-auto h-auto"
+              className="relative max-w-4xl max-h-[90vh] w-auto h-auto flex flex-col items-center justify-center"
             >
-              <button 
-                onClick={() => setSelectedImage(null)}
-                className="absolute -top-12 right-0 p-2 text-slate-300 hover:text-white bg-slate-800/50 hover:bg-slate-800 rounded-full transition-colors"
-              >
-                <X className="w-6 h-6" />
-              </button>
-              <img 
-                src={selectedImage} 
-                alt="Enlarged view" 
-                className="max-w-full max-h-[90vh] object-contain rounded-xl shadow-2xl border border-slate-700" 
-              />
+              {/* Toolbar */}
+              <div className="absolute -top-14 left-1/2 -translate-x-1/2 flex items-center space-x-3 bg-slate-800/80 backdrop-blur-md px-4 py-2 rounded-full border border-slate-700 shadow-xl z-50">
+                <button 
+                  onClick={() => setScale(s => Math.min(s + 0.5, 5))}
+                  className="p-1.5 text-slate-300 hover:text-white hover:bg-slate-700 rounded-full transition-colors"
+                  title="Zoom In"
+                >
+                  <ZoomIn className="w-5 h-5" />
+                </button>
+                <div className="w-[1px] h-4 bg-slate-600"></div>
+                <button 
+                  onClick={() => setScale(s => Math.max(s - 0.5, 0.5))}
+                  className="p-1.5 text-slate-300 hover:text-white hover:bg-slate-700 rounded-full transition-colors"
+                  title="Zoom Out"
+                >
+                  <ZoomOut className="w-5 h-5" />
+                </button>
+                <div className="w-[1px] h-4 bg-slate-600"></div>
+                <button 
+                  onClick={() => setScale(1)}
+                  className={`p-1.5 rounded-full transition-colors ${scale !== 1 ? 'text-slate-300 hover:text-white hover:bg-slate-700' : 'text-slate-600 cursor-not-allowed'}`}
+                  title="Reset Zoom"
+                  disabled={scale === 1}
+                >
+                  <RotateCcw className="w-5 h-5" />
+                </button>
+                <div className="w-[1px] h-4 bg-slate-600"></div>
+                <button 
+                  onClick={() => { setSelectedImage(null); setScale(1); }}
+                  className="p-1.5 text-red-400 hover:text-red-300 hover:bg-slate-700 rounded-full transition-colors"
+                  title="Close"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+
+              {/* Draggable Image Area */}
+              <div className="w-full h-full overflow-visible flex items-center justify-center cursor-grab active:cursor-grabbing">
+                <motion.img 
+                  src={selectedImage} 
+                  alt="Enlarged view" 
+                  className="max-w-full max-h-[85vh] object-contain rounded-xl shadow-2xl border border-slate-700" 
+                  drag
+                  dragConstraints={{ left: -1000, right: 1000, top: -1000, bottom: 1000 }}
+                  dragElastic={0.1}
+                  animate={{ scale }}
+                  transition={{ type: "spring", stiffness: 300, damping: 25 }}
+                  onWheel={(e) => {
+                    e.stopPropagation();
+                    if (e.deltaY < 0) setScale(s => Math.min(s + 0.25, 5));
+                    else setScale(s => Math.max(s - 0.25, 0.5));
+                  }}
+                />
+              </div>
             </motion.div>
           </motion.div>
         )}
