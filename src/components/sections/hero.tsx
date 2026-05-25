@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "@/components/providers";
 import { personalInfo } from "@/lib/resume-data";
@@ -27,6 +27,17 @@ const LinkedinIcon = ({ className }: { className?: string }) => (
 export function HeroSection() {
   const { language, t } = useLanguage();
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
+
+  useEffect(() => {
+    if (isImageModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isImageModalOpen]);
 
   return (
     <>
