@@ -220,12 +220,12 @@ export default function PinnitAppArticle() {
               </button>
 
               {/* Draggable Image Area */}
-              <div className="w-full h-full overflow-visible flex items-center justify-center cursor-grab active:cursor-grabbing">
+              <div className={`w-full h-full overflow-visible flex items-center justify-center ${scale > 1 ? 'cursor-grab active:cursor-grabbing' : 'cursor-default'}`}>
                 <motion.img 
                   src={selectedImage} 
                   alt="Enlarged view" 
                   className="max-w-full max-h-[85vh] object-contain rounded-xl shadow-2xl border border-slate-700" 
-                  drag
+                  drag={scale > 1}
                   dragConstraints={{ left: -1000, right: 1000, top: -1000, bottom: 1000 }}
                   dragElastic={0.1}
                   animate={{ scale }}
