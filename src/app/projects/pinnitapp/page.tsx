@@ -186,7 +186,7 @@ export default function PinnitAppArticle() {
               className="relative max-w-4xl max-h-[90vh] w-auto h-auto flex flex-col items-center justify-center"
             >
               {/* Toolbar - Desktop Only */}
-              <div className="hidden md:flex absolute -top-14 left-1/2 -translate-x-1/2 items-center bg-slate-800/80 backdrop-blur-md px-4 py-2 rounded-full border border-slate-700 shadow-xl z-50">
+              <div className="hidden md:flex fixed top-6 right-6 items-center bg-slate-800/80 backdrop-blur-md px-4 py-2 rounded-full border border-slate-700 shadow-xl z-50">
                 <div className="flex items-center space-x-3 pr-3 border-r border-slate-600 mr-3">
                   <button 
                     onClick={() => setScale(s => Math.min(s + 0.5, 5))}
