@@ -21,7 +21,6 @@
 
 - `/app` - ส่วนของ Pages, Layouts, และ Routing หลักตามมาตรฐาน Next.js
 - `/components` - UI Components ที่ถูกแยกส่วนให้สามารถนำกลับมาใช้ใหม่ได้ (Reusable Components)
-- `/_planning` - โฟลเดอร์สำหรับเอกสาร Workflow 4 ระยะ (Research, Plan, Implement, Verify) ของแต่ละฟีเจอร์ที่ AI ใช้เป็นแหล่งอ้างอิง
 - `/public` - ไฟล์ Asset ต่างๆ เช่น รูปภาพประกอบ, ไฟล์ PDF
 - `/lib` และ `/hooks` - ฟังก์ชัน Utility และ Custom Hooks
 
@@ -41,11 +40,3 @@ npm run dev
 
 3. **เปิดเบราว์เซอร์**
    ไปที่ [http://localhost:3000](http://localhost:3000) เพื่อดูผลลัพธ์การทำงาน
-
-## 🤖 สำหรับ AI Agent (Workflow Rules)
-
-โปรเจกต์นี้ใช้ **4-Phase Feature Development Workflow** อย่างเคร่งครัด:
-
-- ห้ามแก้ไขโค้ดหลักใน `src/` หรือ `app/` จนกว่าจะได้รับอนุมัติแผน (Approval)
-- ศึกษาโครงสร้างและการตัดสินใจในอดีตจาก `/_planning/FEATURES_INDEX.md` เป็นสารบัญหลักเสมอ
-- อ่านกฎเกณฑ์ฉบับเต็มได้จากระบบ Knowledge Item (KI) ที่ฝังไว้กับ Workspace ของคุณ
