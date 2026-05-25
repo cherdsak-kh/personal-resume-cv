@@ -42,3 +42,4 @@ next-env.d.ts
 
 # AI Workflow
 /_planning/
+/personal-information/
