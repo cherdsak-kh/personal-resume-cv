@@ -173,10 +173,9 @@ export default function PinnitAppArticle() {
               onClick={(e) => e.stopPropagation()}
               className="relative max-w-4xl max-h-[90vh] w-auto h-auto flex flex-col items-center justify-center"
             >
-              {/* Toolbar */}
-              <div className="absolute -top-14 left-1/2 -translate-x-1/2 flex items-center bg-slate-800/80 backdrop-blur-md px-4 py-2 rounded-full border border-slate-700 shadow-xl z-50">
-                {/* Zoom Controls - Desktop Only */}
-                <div className="hidden md:flex items-center space-x-3 pr-3 border-r border-slate-600 mr-3">
+              {/* Toolbar - Desktop Only */}
+              <div className="hidden md:flex absolute -top-14 left-1/2 -translate-x-1/2 items-center bg-slate-800/80 backdrop-blur-md px-4 py-2 rounded-full border border-slate-700 shadow-xl z-50">
+                <div className="flex items-center space-x-3 pr-3 border-r border-slate-600 mr-3">
                   <button 
                     onClick={() => setScale(s => Math.min(s + 0.5, 5))}
                     className="p-1.5 text-slate-300 hover:text-white hover:bg-slate-700 rounded-full transition-colors"
@@ -203,7 +202,6 @@ export default function PinnitAppArticle() {
                   </button>
                 </div>
 
-                {/* Close Button - Always Visible */}
                 <button 
                   onClick={() => { setSelectedImage(null); setScale(1); }}
                   className="p-1.5 text-red-400 hover:text-red-300 hover:bg-slate-700 rounded-full transition-colors"
@@ -212,6 +210,14 @@ export default function PinnitAppArticle() {
                   <X className="w-5 h-5" />
                 </button>
               </div>
+
+              {/* Close Button - Mobile Only (Matches Profile Style) */}
+              <button 
+                onClick={() => { setSelectedImage(null); setScale(1); }}
+                className="md:hidden absolute top-4 right-4 p-2 bg-slate-900/50 text-white rounded-full hover:bg-slate-900/70 backdrop-blur-md transition-colors z-50"
+              >
+                <X className="w-5 h-5" />
+              </button>
 
               {/* Draggable Image Area */}
               <div className="w-full h-full overflow-visible flex items-center justify-center cursor-grab active:cursor-grabbing">
