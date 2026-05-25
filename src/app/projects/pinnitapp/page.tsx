@@ -184,7 +184,7 @@ export default function PinnitAppArticle() {
                   >
                     <ZoomIn className="w-5 h-5" />
                   </button>
-                  <div className="w-[1px] h-4 bg-slate-600"></div>
+                  <div className="w-px h-4 bg-slate-600"></div>
                   <button 
                     onClick={() => setScale(s => Math.max(s - 0.5, 0.5))}
                     className="p-1.5 text-slate-300 hover:text-white hover:bg-slate-700 rounded-full transition-colors"
@@ -192,7 +192,7 @@ export default function PinnitAppArticle() {
                   >
                     <ZoomOut className="w-5 h-5" />
                   </button>
-                  <div className="w-[1px] h-4 bg-slate-600"></div>
+                  <div className="w-px h-4 bg-slate-600"></div>
                   <button 
                     onClick={() => setScale(1)}
                     className={`p-1.5 rounded-full transition-colors ${scale !== 1 ? 'text-slate-300 hover:text-white hover:bg-slate-700' : 'text-slate-600 cursor-not-allowed'}`}
