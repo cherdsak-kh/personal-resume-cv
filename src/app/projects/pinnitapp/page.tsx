@@ -1,17 +1,22 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
-import { motion } from "framer-motion";
+import { ArrowLeft, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
-const ImageGrid = ({ images }: { images: string[] }) => (
+const ImageGrid = ({ images, onImageClick }: { images: string[], onImageClick: (src: string) => void }) => (
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-8">
     {images.map((src, i) => (
-      <div key={i} className="relative rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-800/50 shadow-sm">
+      <div 
+        key={i} 
+        className="relative rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-800/50 shadow-sm cursor-pointer group"
+        onClick={() => onImageClick(src)}
+      >
         <img 
           src={src} 
           alt={`Screenshot ${i + 1}`} 
-          className="w-full h-auto object-cover hover:scale-[1.02] transition-transform duration-300 cursor-pointer" 
+          className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-300" 
           loading="lazy" 
         />
       </div>
@@ -20,6 +25,8 @@ const ImageGrid = ({ images }: { images: string[] }) => (
 );
 
 export default function PinnitAppArticle() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   return (
     <div className="min-h-screen pt-24 pb-16 px-4 md:px-8 max-w-4xl mx-auto">
       <Link 
@@ -54,7 +61,7 @@ export default function PinnitAppArticle() {
               <br/><br/>
               สำหรับการจัดเก็บข้อมูลถาวรในเครื่อง (Offline Support) ใช้ <code>@react-native-async-storage/async-storage</code> ส่วนการซิงค์ข้อมูลบน Cloud ใช้บริการ <strong>Supabase</strong> (Database, Auth, Storage)
             </p>
-            <ImageGrid images={["/pinnitapp/image1.jpg", "/pinnitapp/image2.jpg", "/pinnitapp/image3.jpg"]} />
+            <ImageGrid images={["/pinnitapp/image1.jpg", "/pinnitapp/image2.jpg", "/pinnitapp/image3.jpg"]} onImageClick={setSelectedImage} />
           </div>
 
           {/* 1. Navigation */}
@@ -63,7 +70,7 @@ export default function PinnitAppArticle() {
             <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
               ระบบ Navigation ออกแบบบนพื้นฐานของ <strong>expo-router</strong> ซึ่งเป็น file-based routing ทำให้ผู้ใช้สามารถสลับระหว่างหน้าแรก หน้าแผนที่ และหน้าตั้งค่าได้อย่างสะดวกผ่าน Bottom Tabs โดยไม่ได้บังคับให้เข้าสู่ระบบก่อน
             </p>
-            <ImageGrid images={["/pinnitapp/image4.jpg", "/pinnitapp/image5.jpg", "/pinnitapp/image6.jpg"]} />
+            <ImageGrid images={["/pinnitapp/image4.jpg", "/pinnitapp/image5.jpg", "/pinnitapp/image6.jpg"]} onImageClick={setSelectedImage} />
           </div>
 
           {/* 2. Home */}
@@ -72,7 +79,7 @@ export default function PinnitAppArticle() {
             <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
               จุดเริ่มต้นหลักของการใช้งาน แสดงรายการปักหมุดทั้งหมดที่ผู้ใช้สามารถมองเห็นได้ ทั้งที่มาจาก Local Storage และ Database เมื่อผู้ใช้กดปุ่มปักหมุดตำแหน่งปัจจุบัน ระบบจะอ่าน GPS และสร้างรายการใหม่ทันที
             </p>
-            <ImageGrid images={["/pinnitapp/image7.jpg", "/pinnitapp/image8.jpg", "/pinnitapp/image9.jpg"]} />
+            <ImageGrid images={["/pinnitapp/image7.jpg", "/pinnitapp/image8.jpg", "/pinnitapp/image9.jpg"]} onImageClick={setSelectedImage} />
           </div>
 
           {/* 3. FlatList */}
@@ -81,7 +88,7 @@ export default function PinnitAppArticle() {
             <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
               การแสดงรายการปักหมุดในหน้า Home ใช้คอมโพเนนต์ <code>FlatList</code> เพื่อรองรับรายการจำนวนมากอย่างมีประสิทธิภาพด้วยแนวคิด virtualization (เรนเดอร์เฉพาะรายการที่มองเห็น) ช่วยลดการใช้หน่วยความจำและทำให้การเลื่อนหน้าจอราบรื่น
             </p>
-            <ImageGrid images={["/pinnitapp/image10.jpg", "/pinnitapp/image11.jpg", "/pinnitapp/image12.jpg"]} />
+            <ImageGrid images={["/pinnitapp/image10.jpg", "/pinnitapp/image11.jpg", "/pinnitapp/image12.jpg"]} onImageClick={setSelectedImage} />
           </div>
 
           {/* 4. Fetch */}
@@ -90,7 +97,7 @@ export default function PinnitAppArticle() {
             <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
               การดึงข้อมูลจากบริการภายนอกใช้ Web API <code>fetch</code> สำหรับเรียก API reverse geocoding เพื่อนำพิกัดละติจูดและลองจิจูดไปแปลงเป็นชื่อสถานที่ นอกจากนั้น การเชื่อมต่อกับ Supabase ก็ใช้คำสั่งผ่าน SDK ซึ่งรองรับการจัดการข้อผิดพลาดและข้อมูลสำรองเมื่อออฟไลน์
             </p>
-            <ImageGrid images={["/pinnitapp/image13.jpg", "/pinnitapp/image14.jpg", "/pinnitapp/image15.jpg"]} />
+            <ImageGrid images={["/pinnitapp/image13.jpg", "/pinnitapp/image14.jpg", "/pinnitapp/image15.jpg"]} onImageClick={setSelectedImage} />
           </div>
 
           {/* 5. Async Storage */}
@@ -99,7 +106,7 @@ export default function PinnitAppArticle() {
             <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
               ใช้สำหรับเก็บการตั้งค่าของผู้ใช้ สถานะโหมดมืด (Dark Mode) และเก็บแคช (Cache) ของข้อมูลปักหมุด เพื่อให้ผู้ใช้สามารถใช้งานแอปได้แบบ Offline และซิงค์เมื่อมีอินเทอร์เน็ต
             </p>
-            <ImageGrid images={["/pinnitapp/image16.jpg", "/pinnitapp/image17.jpg", "/pinnitapp/image18.jpg"]} />
+            <ImageGrid images={["/pinnitapp/image16.jpg", "/pinnitapp/image17.jpg", "/pinnitapp/image18.jpg"]} onImageClick={setSelectedImage} />
           </div>
 
           {/* 6. GPS & Maps */}
@@ -108,7 +115,7 @@ export default function PinnitAppArticle() {
             <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
               ทำงานร่วมกับ GPS ผ่าน <code>expo-location</code> สำหรับจัดการการขออนุญาต (Permissions) และอ่านตำแหน่งปัจจุบัน <code>getCurrentPositionAsync</code> และแสดงผลบน <code>react-native-maps</code> โดยควบคุมมุมมองแผนที่ให้เลื่อนและซูมไปยังจุดที่ผู้ใช้เลือกได้โดยอัตโนมัติ
             </p>
-            <ImageGrid images={["/pinnitapp/image19.jpg", "/pinnitapp/image20.jpg", "/pinnitapp/image21.jpg"]} />
+            <ImageGrid images={["/pinnitapp/image19.jpg", "/pinnitapp/image20.jpg", "/pinnitapp/image21.jpg"]} onImageClick={setSelectedImage} />
           </div>
 
           {/* 7. Supabase Backend */}
@@ -117,7 +124,7 @@ export default function PinnitAppArticle() {
             <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
               ออกแบบตาราง <code>pins</code> เพื่อเก็บข้อมูลพิกัด พร้อมเปิดใช้ Row Level Security (RLS) เพื่อกำหนดให้ผู้ใช้เห็นและแก้ไขได้เฉพาะข้อมูลของตนเอง
             </p>
-            <ImageGrid images={["/pinnitapp/image22.jpg", "/pinnitapp/image23.jpg", "/pinnitapp/image24.jpg"]} />
+            <ImageGrid images={["/pinnitapp/image22.jpg", "/pinnitapp/image23.jpg", "/pinnitapp/image24.jpg"]} onImageClick={setSelectedImage} />
           </div>
 
           {/* 8. Supabase Storage */}
@@ -126,7 +133,7 @@ export default function PinnitAppArticle() {
             <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
               ใช้เก็บไฟล์รูปโปรไฟล์ผู้ใช้ โดยมีการจัดการสิทธิ์ RLS เช่นกัน ป้องกันการแก้ไขรูปของผู้อื่น และแปลงภาพด้วย base64 arraybuffer ก่อนอัปโหลดขึ้น Cloud
             </p>
-            <ImageGrid images={["/pinnitapp/image25.jpg", "/pinnitapp/image26.jpg", "/pinnitapp/image27.jpg", "/pinnitapp/image28.jpg", "/pinnitapp/image29.jpg", "/pinnitapp/image30.jpg"]} />
+            <ImageGrid images={["/pinnitapp/image25.jpg", "/pinnitapp/image26.jpg", "/pinnitapp/image27.jpg", "/pinnitapp/image28.jpg", "/pinnitapp/image29.jpg", "/pinnitapp/image30.jpg"]} onImageClick={setSelectedImage} />
           </div>
 
           {/* 9. Supabase Auth */}
@@ -135,7 +142,7 @@ export default function PinnitAppArticle() {
             <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
               ใช้รูปแบบ Email/Password โดยสร้าง Session ที่ผูกกับ AsyncStorage เพื่อให้ผู้ใช้ไม่ต้องล็อกอินใหม่ทุกครั้งที่เปิดแอป และจัดเก็บข้อมูล Metadata ของผู้ใช้
             </p>
-            <ImageGrid images={["/pinnitapp/image31.jpg", "/pinnitapp/image32.jpg", "/pinnitapp/image33.jpg", "/pinnitapp/image34.jpg", "/pinnitapp/image35.jpg"]} />
+            <ImageGrid images={["/pinnitapp/image31.jpg", "/pinnitapp/image32.jpg", "/pinnitapp/image33.jpg", "/pinnitapp/image34.jpg", "/pinnitapp/image35.jpg"]} onImageClick={setSelectedImage} />
           </div>
 
         </section>
@@ -146,6 +153,40 @@ export default function PinnitAppArticle() {
           </p>
         </footer>
       </motion.article>
+
+      {/* Image Modal */}
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedImage(null)}
+            className="fixed inset-0 z-100 bg-slate-900/90 backdrop-blur-sm flex items-center justify-center p-4 cursor-pointer"
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ type: "spring", stiffness: 300, damping: 25 }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative max-w-4xl max-h-[90vh] w-auto h-auto"
+            >
+              <button 
+                onClick={() => setSelectedImage(null)}
+                className="absolute -top-12 right-0 p-2 text-slate-300 hover:text-white bg-slate-800/50 hover:bg-slate-800 rounded-full transition-colors"
+              >
+                <X className="w-6 h-6" />
+              </button>
+              <img 
+                src={selectedImage} 
+                alt="Enlarged view" 
+                className="max-w-full max-h-[90vh] object-contain rounded-xl shadow-2xl border border-slate-700" 
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
