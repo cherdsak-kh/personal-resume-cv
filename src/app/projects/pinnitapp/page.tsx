@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ArrowLeft, X, ZoomIn, ZoomOut, RotateCcw } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -27,6 +27,18 @@ const ImageGrid = ({ images, onImageClick }: { images: string[], onImageClick: (
 export default function PinnitAppArticle() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [scale, setScale] = useState(1);
+
+  // Disable body scroll when modal is open
+  useEffect(() => {
+    if (selectedImage) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [selectedImage]);
 
   return (
     <div className="min-h-screen pt-24 pb-16 px-4 md:px-8 max-w-4xl mx-auto">
