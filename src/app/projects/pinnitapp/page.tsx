@@ -174,32 +174,36 @@ export default function PinnitAppArticle() {
               className="relative max-w-4xl max-h-[90vh] w-auto h-auto flex flex-col items-center justify-center"
             >
               {/* Toolbar */}
-              <div className="absolute -top-14 left-1/2 -translate-x-1/2 flex items-center space-x-3 bg-slate-800/80 backdrop-blur-md px-4 py-2 rounded-full border border-slate-700 shadow-xl z-50">
-                <button 
-                  onClick={() => setScale(s => Math.min(s + 0.5, 5))}
-                  className="p-1.5 text-slate-300 hover:text-white hover:bg-slate-700 rounded-full transition-colors"
-                  title="Zoom In"
-                >
-                  <ZoomIn className="w-5 h-5" />
-                </button>
-                <div className="w-[1px] h-4 bg-slate-600"></div>
-                <button 
-                  onClick={() => setScale(s => Math.max(s - 0.5, 0.5))}
-                  className="p-1.5 text-slate-300 hover:text-white hover:bg-slate-700 rounded-full transition-colors"
-                  title="Zoom Out"
-                >
-                  <ZoomOut className="w-5 h-5" />
-                </button>
-                <div className="w-[1px] h-4 bg-slate-600"></div>
-                <button 
-                  onClick={() => setScale(1)}
-                  className={`p-1.5 rounded-full transition-colors ${scale !== 1 ? 'text-slate-300 hover:text-white hover:bg-slate-700' : 'text-slate-600 cursor-not-allowed'}`}
-                  title="Reset Zoom"
-                  disabled={scale === 1}
-                >
-                  <RotateCcw className="w-5 h-5" />
-                </button>
-                <div className="w-[1px] h-4 bg-slate-600"></div>
+              <div className="absolute -top-14 left-1/2 -translate-x-1/2 flex items-center bg-slate-800/80 backdrop-blur-md px-4 py-2 rounded-full border border-slate-700 shadow-xl z-50">
+                {/* Zoom Controls - Desktop Only */}
+                <div className="hidden md:flex items-center space-x-3 pr-3 border-r border-slate-600 mr-3">
+                  <button 
+                    onClick={() => setScale(s => Math.min(s + 0.5, 5))}
+                    className="p-1.5 text-slate-300 hover:text-white hover:bg-slate-700 rounded-full transition-colors"
+                    title="Zoom In"
+                  >
+                    <ZoomIn className="w-5 h-5" />
+                  </button>
+                  <div className="w-[1px] h-4 bg-slate-600"></div>
+                  <button 
+                    onClick={() => setScale(s => Math.max(s - 0.5, 0.5))}
+                    className="p-1.5 text-slate-300 hover:text-white hover:bg-slate-700 rounded-full transition-colors"
+                    title="Zoom Out"
+                  >
+                    <ZoomOut className="w-5 h-5" />
+                  </button>
+                  <div className="w-[1px] h-4 bg-slate-600"></div>
+                  <button 
+                    onClick={() => setScale(1)}
+                    className={`p-1.5 rounded-full transition-colors ${scale !== 1 ? 'text-slate-300 hover:text-white hover:bg-slate-700' : 'text-slate-600 cursor-not-allowed'}`}
+                    title="Reset Zoom"
+                    disabled={scale === 1}
+                  >
+                    <RotateCcw className="w-5 h-5" />
+                  </button>
+                </div>
+
+                {/* Close Button - Always Visible */}
                 <button 
                   onClick={() => { setSelectedImage(null); setScale(1); }}
                   className="p-1.5 text-red-400 hover:text-red-300 hover:bg-slate-700 rounded-full transition-colors"
