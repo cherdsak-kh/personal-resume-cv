@@ -17,7 +17,8 @@
 - **Premium Aesthetics:** การออกแบบ UI ที่เน้นความสวยงาม ทันสมัย แบบฉบับสาย Tech / AI 
 - **Micro-animations:** ยกระดับประสบการณ์ผู้ใช้งานด้วยแอนิเมชันที่ลื่นไหลจาก `framer-motion` (เช่น Image Modal ขยายรูปโปรไฟล์, Fade-in scroll)
 - **Dark / Light Mode:** รองรับการสลับธีมเพื่อความสะดวกสบายในการอ่าน พร้อมโทนสีปรับเปลี่ยนแบบไดนามิก
-- **Single-page Scroll & Navigation:** มีแถบ Navbar นำทางกดกระโดดไปยังหัวข้อต่างๆ (Projects, Education, Skills, Experience) ได้อย่างนุ่มนวล
+- **Single-page Scroll & Navigation:** มีแถบ Navbar นำทางไปยังหัวข้อต่างๆ พร้อม Mobile Hamburger Menu สำหรับการแสดงผลบนหน้าจอมือถืออย่างสมบูรณ์แบบ
+- **Interactive Project Articles:** มีหน้าสำหรับเจาะลึกรายละเอียดโปรเจกต์เฉพาะ (เช่น PinnitApp) พร้อมระบบ Image Gallery ที่มีฟีเจอร์ซูมภาพ (Zoom & Pan) แบบไร้รอยต่อ
 - **Downloadable CV:** รองรับการแนบไฟล์และดาวน์โหลด PDF เรซูเม่โดยตรงจากหน้าเว็บ
 
 ---
