@@ -39,7 +39,7 @@ export function Providers({ children, ...props }: React.ComponentProps<typeof Ne
       if (language === "th") {
         document.body.style.fontFamily = "var(--font-sarabun), sans-serif";
       } else {
-        document.body.style.fontFamily = "var(--font-inter), sans-serif";
+        document.body.style.fontFamily = "var(--font-inter), var(--font-sarabun), sans-serif";
       }
     }
   }, [language, mounted]);
