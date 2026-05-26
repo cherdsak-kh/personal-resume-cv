@@ -38,7 +38,9 @@ export const personalInfo = {
   email: "cherd8524@gmail.com",
   phone: "0811168524",
   github: "https://github.com/cherdsak-kh",
-  linkedin: "https://www.linkedin.com/in/cherdsak-khamlai"
+  linkedin: "https://www.linkedin.com/in/cherdsak-khamlai",
+  resumeFile: "/cherdsak-resume-cv.pdf",
+  resumeFileName: "cherdsak_khamlai_resume_cv.pdf"
 };
 
 export const skills: Skill[] = [
@@ -203,6 +205,7 @@ export const projects: Project[] = [
       th: "บอท LINE Messaging API พัฒนาด้วย Express.js สำหรับจัดการ Webhook, โต้ตอบกับผู้ใช้แบบอัตโนมัติ และให้บริการข้อมูลแบบเรียลไทม์"
     },
     techStack: ["Node.js", "Express.js", "LINE Messaging API", "Webhook"],
+    link: "/projects/linebot",
     github: "https://github.com/cherdsak-kh/line-bot-expressjs"
   },
   {

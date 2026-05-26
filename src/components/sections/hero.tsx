@@ -111,8 +111,8 @@ export function HeroSection() {
             )}
 
             <a
-              href="/cherdsak-resume.pdf"
-              download="Cherdsak_Khamlai_Resume.pdf"
+              href={personalInfo.resumeFile || "/cherdsak-resume.pdf"}
+              download={personalInfo.resumeFileName || "Cherdsak_Khamlai_Resume.pdf"}
               className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-slate-800 dark:bg-slate-700 text-white font-medium hover:bg-slate-900 dark:hover:bg-slate-600 transition-colors shadow-sm"
             >
               <Download className="w-5 h-5 mr-2" />
