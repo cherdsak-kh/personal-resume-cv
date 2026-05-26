@@ -19,6 +19,7 @@
 - **Dark / Light Mode:** รองรับการสลับธีมเพื่อความสะดวกสบายในการอ่าน พร้อมโทนสีปรับเปลี่ยนแบบไดนามิก
 - **Single-page Scroll & Navigation:** มีแถบ Navbar นำทางไปยังหัวข้อต่างๆ พร้อม Mobile Hamburger Menu สำหรับการแสดงผลบนหน้าจอมือถืออย่างสมบูรณ์แบบ
 - **Interactive Project Articles:** มีหน้าสำหรับเจาะลึกรายละเอียดโปรเจกต์เฉพาะ (เช่น PinnitApp) พร้อมระบบ Image Gallery ที่มีฟีเจอร์ซูมภาพ (Zoom & Pan) แบบไร้รอยต่อ
+- **Interactive Contact Info:** ระบบปุ่มติดต่อ (Email & Phone) ที่มาพร้อมฟังก์ชัน Click-to-Copy คัดลอกข้อมูลลง Clipboard ได้รวดเร็ว
 - **Downloadable CV:** รองรับการแนบไฟล์และดาวน์โหลด PDF เรซูเม่โดยตรงจากหน้าเว็บ
 
 ---
@@ -72,6 +73,6 @@ npm run dev
 
 ## 📬 ติดต่อ (Contact)
 
-- **Email:** [[EMAIL_ADDRESS]](mailto:[EMAIL_ADDRESS])
+- **Email:** [cherd8524@gmail.com](mailto:cherd8524@gmail.com)
 - **LinkedIn:** [Cherdsak Kh. - LinkedIn](https://www.linkedin.com/in/cherdsak-khamlai)
 - **GitHub:** [Cherdsak Kh. - GitHub](https://github.com/cherdsak-kh)

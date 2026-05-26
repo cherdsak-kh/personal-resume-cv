@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "@/components/providers";
 import { personalInfo } from "@/lib/resume-data";
-import { Download, Mail, MapPin, Phone, X } from "lucide-react";
+import { Download, Mail, MapPin, Phone, X, Check, Copy } from "lucide-react";
 import Image from "next/image";
 
 // Inline SVG for GitHub
@@ -27,6 +27,13 @@ const LinkedinIcon = ({ className }: { className?: string }) => (
 export function HeroSection() {
   const { language, t } = useLanguage();
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
+  const [copiedItem, setCopiedItem] = useState<string | null>(null);
+
+  const copyToClipboard = (text: string, type: string) => {
+    navigator.clipboard.writeText(text);
+    setCopiedItem(type);
+    setTimeout(() => setCopiedItem(null), 2000);
+  };
 
   useEffect(() => {
     if (isImageModalOpen) {
@@ -81,22 +88,26 @@ export function HeroSection() {
 
         <div className="pt-8 flex flex-wrap justify-center gap-4">
           <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href={`mailto:${personalInfo.email}`}
-              className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors shadow-sm"
+            <button
+              onClick={() => copyToClipboard(personalInfo.email, 'email')}
+              className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors shadow-sm group"
+              title="Click to copy email"
             >
-              <Mail className="w-5 h-5 mr-2" />
-              Email
-            </a>
+              {copiedItem === 'email' ? <Check className="w-5 h-5 mr-2" /> : <Mail className="w-5 h-5 mr-2 group-hover:hidden" />}
+              {copiedItem !== 'email' && <Copy className="w-5 h-5 mr-2 hidden group-hover:block" />}
+              {personalInfo.email}
+            </button>
             
             {personalInfo.phone && (
-              <a
-                href={`tel:${personalInfo.phone.replace(/\s+/g, '')}`}
-                className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-emerald-600 text-white font-medium hover:bg-emerald-700 transition-colors shadow-sm"
+              <button
+                onClick={() => copyToClipboard(personalInfo.phone, 'phone')}
+                className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-emerald-600 text-white font-medium hover:bg-emerald-700 transition-colors shadow-sm group"
+                title="Click to copy phone number"
               >
-                <Phone className="w-5 h-5 mr-2" />
+                {copiedItem === 'phone' ? <Check className="w-5 h-5 mr-2" /> : <Phone className="w-5 h-5 mr-2 group-hover:hidden" />}
+                {copiedItem !== 'phone' && <Copy className="w-5 h-5 mr-2 hidden group-hover:block" />}
                 {personalInfo.phone}
-              </a>
+              </button>
             )}
 
             <a
