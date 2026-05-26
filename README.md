@@ -14,7 +14,7 @@
 ## 🌟 จุดเด่นของโปรเจกต์ (Features)
 
 - **Bilingual System (EN/TH):** รองรับระบบ 2 ภาษา สลับได้แบบ Real-time พร้อมฟังก์ชันเปลี่ยนฟอนต์อักษรให้เข้ากับภาษาอัตโนมัติ (`Inter` สำหรับ EN และ `Sarabun` สำหรับ TH)
-- **Premium Aesthetics:** การออกแบบ UI ที่เน้นความสวยงาม ทันสมัย แบบฉบับสาย Tech / AI 
+- **Premium Aesthetics:** การออกแบบ UI ที่เน้นความสวยงาม ทันสมัย แบบฉบับสาย Tech / AI
 - **Micro-animations:** ยกระดับประสบการณ์ผู้ใช้งานด้วยแอนิเมชันที่ลื่นไหลจาก `framer-motion` (เช่น Image Modal ขยายรูปโปรไฟล์, Fade-in scroll)
 - **Dark / Light Mode:** รองรับการสลับธีมเพื่อความสะดวกสบายในการอ่าน พร้อมโทนสีปรับเปลี่ยนแบบไดนามิก
 - **Single-page Scroll & Navigation:** มีแถบ Navbar นำทางไปยังหัวข้อต่างๆ พร้อม Mobile Hamburger Menu สำหรับการแสดงผลบนหน้าจอมือถืออย่างสมบูรณ์แบบ
@@ -65,12 +65,13 @@ npm run dev
 ## 📝 วิธีแก้ไขเนื้อหา (How to update content)
 
 แก้ไขข้อมูลส่วนตัวของคุณได้ง่ายๆ ในไฟล์ **`src/lib/resume-data.ts`** โดยแก้ไขเพียงจุดเดียว ระบบจะอัปเดตทั้งในฝั่งภาษาไทยและอังกฤษให้ทันที
-- อัปเดตไฟล์ PDF เรซูเม่ของคุณโดยนำไฟล์ไปวางไว้ที่ `public/cherdsak-resume.pdf` 
+
+- อัปเดตไฟล์ PDF เรซูเม่ของคุณโดยนำไฟล์ไปวางไว้ที่ `public/cherdsak-resume.pdf`
 
 ---
 
 ## 📬 ติดต่อ (Contact)
 
-- **Email:** [cherd8524@gmail.com](mailto:cherd8524@gmail.com)
-- **LinkedIn:** [Cherdsak Kh. - LinkedIn](https://www.linkedin.com/in/cherdsak-khamlai-967806401/)
+- **Email:** [[EMAIL_ADDRESS]](mailto:[EMAIL_ADDRESS])
+- **LinkedIn:** [Cherdsak Kh. - LinkedIn](https://www.linkedin.com/in/cherdsak-khamlai)
 - **GitHub:** [Cherdsak Kh. - GitHub](https://github.com/cherdsak-kh)

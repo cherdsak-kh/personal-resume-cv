@@ -35,10 +35,10 @@ export const personalInfo = {
     en: "Experienced Software Engineer with deep expertise in Python, Node.js, and DevOps. Specialized in building scalable backend systems, robust RESTful APIs, and Agentic AI architectures to deliver highly efficient and intelligent solutions.",
     th: "วิศวกรซอฟต์แวร์ผู้มีประสบการณ์และความเชี่ยวชาญเชิงลึกใน Python, Node.js และ DevOps มุ่งเน้นการสร้างระบบ Backend ที่รองรับการขยายตัว, RESTful API ที่แข็งแกร่ง และสถาปัตยกรรม AI Agent เพื่อส่งมอบโซลูชันที่มีประสิทธิภาพและชาญฉลาด"
   },
-  email: "cherd8524@gmail.com",
+  email: "[EMAIL_ADDRESS]",
   phone: "+66 811168524",
   github: "https://github.com/cherdsak-kh",
-  linkedin: "https://www.linkedin.com/in/cherdsak-khamlai-967806401/"
+  linkedin: "https://www.linkedin.com/in/cherdsak-khamlai"
 };
 
 export const skills: Skill[] = [
@@ -52,7 +52,7 @@ export const skills: Skill[] = [
   { name: "RESTful APIs", category: "Backend & APIs" },
   { name: "PHP", category: "Backend & APIs" },
   { name: "Laravel", category: "Backend & APIs" },
-  
+
   // Frontend
   { name: "React.js", category: "Frontend" },
   { name: "Next.js", category: "Frontend" },
