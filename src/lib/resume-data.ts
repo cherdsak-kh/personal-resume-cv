@@ -215,6 +215,7 @@ export const projects: Project[] = [
       th: "ระบบจัดการรายการสิ่งที่ต้องทำ (Todo List) แบบครบวงจร พร้อมระบบจัดการผู้ใช้งาน การจัดหมวดหมู่งาน และติดตามสถานะการทำงาน"
     },
     techStack: ["Node.js", "Backend", "REST API", "Database"],
+    link: "/projects/todos",
     github: "https://github.com/cherdsak-kh/Todo-List-System"
   }
 ];
