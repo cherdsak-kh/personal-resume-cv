@@ -216,6 +216,12 @@ export default function LineBotArticle() {
             </div>
           </div>
         </section>
+
+        <footer className="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 text-center">
+          <p className="text-slate-500 dark:text-slate-400">
+            เอกสารนี้เป็นส่วนหนึ่งของแฟ้มสะสมผลงาน (Portfolio) ของ Cherdsak Khamlai
+          </p>
+        </footer>
       </article>
 
       {/* Image Modal */}

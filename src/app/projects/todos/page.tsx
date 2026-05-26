@@ -287,6 +287,12 @@ export default function TodosArticle() {
         <ImageGrid images={["/todos/image1.jpg"]} onImageClick={setSelectedImage} />
       </section>
 
+      <footer className="mb-12 mt-12 border-t border-slate-200 dark:border-slate-800 pt-8 text-center">
+        <p className="text-slate-500 dark:text-slate-400">
+          เอกสารนี้เป็นส่วนหนึ่งของแฟ้มสะสมผลงาน (Portfolio) ของ Cherdsak Khamlai
+        </p>
+      </footer>
+
       {/* Image Modal */}
       <AnimatePresence>
         {selectedImage && (
