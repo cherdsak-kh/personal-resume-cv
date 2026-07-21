@@ -65,7 +65,8 @@ export const skills: Skill[] = [
   { name: "MySQL", category: "Databases" },
   { name: "MongoDB", category: "Databases" },
   { name: "Supabase", category: "Databases" },
-  { name: "Cloudflare R2 (Blob Storage)", category: "Databases" },
+  { name: "Cloudflare R2", category: "Databases" },
+  { name: "Azure Blob Storage", category: "Databases" },
 
   // DevOps, Tools & Concepts
   { name: "Docker (Dockerfile, Container Management)", category: "DevOps, Tools & Concepts" },
@@ -112,7 +113,7 @@ export const experiences: Experience[] = [
     duration: { en: "OCT 2023 - JUL 2025", th: "ต.ค. 2566 - ก.ค. 2568" },
     achievements: {
       en: [
-        "Designed and developed secure RESTful APIs with Node.js and Express.js, minimizing data latency between frontend and backend.",
+        "Designed and developed secure RESTful APIs with Node.js and Express.js, minimizing data latency between frontend and backend systems.",
         "Assisted in setting up and managing infrastructure including MySQL, MongoDB, and Cloudflare R2, optimizing database queries to cut data retrieval times by 20%.",
         "Configured secure reverse proxies using Nginx Proxy Manager and managed environment variables securely via Infisical.",
         "Partnered with Frontend and UX/UI teams to resolve cross-origin data communication barriers and enhance platform stability."
