@@ -108,7 +108,7 @@ export const experiences: Experience[] = [
   },
   {
     company: { en: "ABSOLUTE WELLNESS COMPANY LIMITED", th: "บริษัท แอ็บโซลูท เวลเนส จำกัด" },
-    role: { en: "Back-end Developer and Support Officer", th: "Back-end Developer and Support Officer" },
+    role: { en: "Backend Developer", th: "Backend Developer" },
     duration: { en: "OCT 2023 - JUL 2025", th: "ต.ค. 2566 - ก.ค. 2568" },
     achievements: {
       en: [
