@@ -127,7 +127,7 @@ export const experiences: Experience[] = [
   },
   {
     company: { en: "Dungbhumi Corporation Co.,Ltd.", th: "บริษัท ดังภูมิ จำกัด" },
-    role: { en: "Front-End Developer", th: "Front-End Developer" },
+    role: { en: "Frontend Developer", th: "Frontend Developer" },
     duration: { en: "MAY 2023 - AUG 2023", th: "พ.ค. 2566 - ส.ค. 2566" },
     achievements: {
       en: [
