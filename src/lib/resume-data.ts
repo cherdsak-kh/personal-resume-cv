@@ -112,13 +112,13 @@ export const experiences: Experience[] = [
     duration: { en: "OCT 2023 - JUL 2025", th: "ต.ค. 2566 - ก.ค. 2568" },
     achievements: {
       en: [
-        "Designed and developed secure RESTful APIs with Node.js and Express.js, minimizing data latency between web and mobile platforms.",
+        "Designed and developed secure RESTful APIs with Node.js and Express.js, minimizing data latency between frontend and backend.",
         "Assisted in setting up and managing infrastructure including MySQL, MongoDB, and Cloudflare R2, optimizing database queries to cut data retrieval times by 20%.",
         "Configured secure reverse proxies using Nginx Proxy Manager and managed environment variables securely via Infisical.",
         "Partnered with Frontend and UX/UI teams to resolve cross-origin data communication barriers and enhance platform stability."
       ],
       th: [
-        "ออกแบบและพัฒนา RESTful API ด้วย Node.js และ Express.js ลดความหน่วงในการรับส่งข้อมูลระหว่างเว็บและแอปมือถือ",
+        "ออกแบบและพัฒนา RESTful API ด้วย Node.js และ Express.js ลดความหน่วงในการรับส่งข้อมูลระหว่างหน้าบ้านและหลังบ้าน",
         "มีส่วนร่วมในการติดตั้งและจัดการโครงสร้างพื้นฐาน (MySQL, MongoDB, Cloudflare R2) รวมถึงทำ Query Optimization เพื่อลดเวลาดึงข้อมูลลง 20%",
         "ติดตั้งและจัดการ Nginx Proxy Manager เพื่อควบคุมการเข้าถึงระบบ และใช้งาน Infisical ในการจัดการความปลอดภัยของข้อมูล (Secrets Management)",
         "ประสานงานทีม Frontend และ UX/UI แก้ไขปัญหาข้อจำกัดการสื่อสารข้อมูล ช่วยเพิ่มความเสถียรให้แพลตฟอร์ม"
