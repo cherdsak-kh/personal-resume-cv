@@ -128,7 +128,7 @@ export const experiences: Experience[] = [
   },
   {
     company: { en: "Dungbhumi Corporation Co.,Ltd.", th: "บริษัท ดังภูมิ จำกัด" },
-    role: { en: "Junior Frontend Developer", th: "Junior Frontend Developer" },
+    role: { en: "Junior Frontend Developer (Outsource)", th: "Junior Frontend Developer (Outsource)" },
     duration: { en: "MAY 2023 - AUG 2023", th: "พ.ค. 2566 - ส.ค. 2566" },
     achievements: {
       en: [
@@ -145,7 +145,7 @@ export const experiences: Experience[] = [
   },
   {
     company: { en: "The Stock Exchange of Thailand", th: "ตลาดหลักทรัพย์แห่งประเทศไทย" },
-    role: { en: "Junior Software Tester & DAP Operator", th: "Junior Software Tester & DAP Operator" },
+    role: { en: "Junior Software Tester & DAP Operator (Outsource)", th: "Junior Software Tester & DAP Operator (Outsource)" },
     duration: { en: "MAR 2022 - APR 2023", th: "มี.ค. 2565 - เม.ย. 2566" },
     achievements: {
       en: [
