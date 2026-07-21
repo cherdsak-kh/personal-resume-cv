@@ -39,8 +39,8 @@ export const personalInfo = {
   phone: "081-116-8524",
   github: "https://github.com/cherdsak-kh",
   linkedin: "https://www.linkedin.com/in/cherdsak-khamlai",
-  resumeFile: "/cherdsak-resume-cv.pdf",
-  resumeFileName: "cherdsak_khamlai_resume_cv.pdf"
+  resumeFile: "/Resume (TH-EN) - Cherdsak Kh.pdf",
+  resumeFileName: "Resume (TH-EN) - Cherdsak Kh.pdf"
 };
 
 export const skills: Skill[] = [
