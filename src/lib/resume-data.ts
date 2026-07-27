@@ -28,12 +28,12 @@ export interface Project {
 
 export const personalInfo = {
   name: { en: "Cherdsak Khamlai", th: "เชิดศักดิ์ คำไล้" },
-  title: { en: "Backend Developer", th: "Backend Developer" },
+  title: { en: "Software Developer", th: "Software Developer" },
   location: { en: "Ramkhamhaeng 24, Bang Kapi, Bangkok, TH", th: "รามคำแหง 24, บางกะปิ, กรุงเทพมหานคร ประเทศไทย" },
   profileImage: "/profile.jpg",
   summary: {
-    en: "Software Developer working with Node.js, TypeScript, and DevOps. Passionate about building backend systems, developing RESTful APIs, and exploring Agentic AI integrations. Committed to continuous learning, effective teamwork, and delivering practical solutions that drive project success.",
-    th: "นักพัฒนาซอฟต์แวร์ที่ทำงานเกี่ยวกับ Node.js, TypeScript และเครื่องมือด้าน DevOps มีความสนใจในการพัฒนาระบบ Backend, การสร้าง RESTful API และการประยุกต์ใช้เทคโนโลยี AI ให้ความสำคัญกับการเรียนรู้สิ่งใหม่ การทำงานร่วมกับทีม และตั้งใจที่จะพัฒนาโซลูชันที่ใช้งานได้จริงเพื่อตอบโจทย์เป้าหมายของทีม"
+    en: "Software Developer experienced in both Backend (Node.js, TypeScript) and Frontend (React.js, HTML/CSS) development, along with DevOps tools. Passionate about building practical end-to-end web applications. Committed to continuous learning, effective teamwork, and leveraging AI integrations to optimize workflows.",
+    th: "นักพัฒนาซอฟต์แวร์ที่มีประสบการณ์ในการพัฒนาระบบทั้งฝั่ง Backend (Node.js, TypeScript) และ Frontend (React.js, HTML/CSS) รวมถึงการใช้เครื่องมือด้าน DevOps สนใจในการสร้างเว็บแอปพลิเคชันที่ทำงานได้จริงแบบ End-to-End ให้ความสำคัญกับการเรียนรู้สิ่งใหม่ การทำงานร่วมกับทีม และการประยุกต์ใช้ AI เพื่อเพิ่มประสิทธิภาพการทำงาน"
   },
   email: "cherd8524@gmail.com",
   phone: "081-116-8524",
