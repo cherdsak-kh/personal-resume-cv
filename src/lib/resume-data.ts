@@ -32,14 +32,14 @@ export const personalInfo = {
   location: { en: "Ramkhamhaeng 24, Bang Kapi, Bangkok, TH", th: "รามคำแหง 24, บางกะปิ, กรุงเทพมหานคร ประเทศไทย" },
   profileImage: "/profile.jpg",
   summary: {
-    en: "Software Developer experienced in both Backend (Node.js, TypeScript) and Frontend (React.js, HTML/CSS) development, along with DevOps tools. Passionate about building practical end-to-end web applications. Committed to continuous learning, effective teamwork, and leveraging AI integrations to optimize workflows.",
-    th: "นักพัฒนาซอฟต์แวร์ที่มีประสบการณ์ในการพัฒนาระบบทั้งฝั่ง Backend (Node.js, TypeScript) และ Frontend (React.js, HTML/CSS) รวมถึงการใช้เครื่องมือด้าน DevOps สนใจในการสร้างเว็บแอปพลิเคชันที่ทำงานได้จริงแบบ End-to-End ให้ความสำคัญกับการเรียนรู้สิ่งใหม่ การทำงานร่วมกับทีม และการประยุกต์ใช้ AI เพื่อเพิ่มประสิทธิภาพการทำงาน"
+    en: "Software Developer experienced in both Backend (Node.js, TypeScript) and Frontend (React.js, HTML/CSS) development, along with DevOps tools. Passionate about building robust and practical web applications. Committed to continuous learning, effective teamwork, and leveraging AI integrations to optimize workflows.",
+    th: "นักพัฒนาซอฟต์แวร์ที่มีประสบการณ์ทำงานทั้งฝั่ง Backend (Node.js, TypeScript) และ Frontend (React.js, HTML/CSS) รวมถึงการใช้เครื่องมือด้าน DevOps สนใจในการพัฒนาเว็บแอปพลิเคชันที่สามารถตอบสนองการใช้งานจริงได้อย่างมีประสิทธิภาพ ให้ความสำคัญกับการเรียนรู้สิ่งใหม่ การทำงานร่วมกับทีม และการประยุกต์ใช้ AI เพื่อช่วยในการทำงาน"
   },
   email: "cherd8524@gmail.com",
   phone: "081-116-8524",
   github: "https://github.com/cherdsak-kh",
   linkedin: "https://www.linkedin.com/in/cherdsak-khamlai",
-  resumeFile: "/Resume (TH-EN) - Cherdsak Kh.pdf",
+  resumeFile: "https://drive.google.com/file/d/1bSVB8eHaSLKZ3hx7aPTMvUE_1RdQxiVy/view?usp=sharing",
   resumeFileName: "Resume (TH-EN) - Cherdsak Kh.pdf"
 };
 
