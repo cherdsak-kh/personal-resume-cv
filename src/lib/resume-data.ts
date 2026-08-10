@@ -40,7 +40,7 @@ export const personalInfo = {
   github: "https://github.com/cherdsak-kh",
   linkedin: "https://www.linkedin.com/in/cherdsak-khamlai",
   resumeFile: "https://drive.google.com/file/d/1bSVB8eHaSLKZ3hx7aPTMvUE_1RdQxiVy/view?usp=sharing",
-  resumeFileName: "Resume (TH-EN) - Cherdsak Kh.pdf"
+  resumeFileName: "Resume (EN-TH) - Cherdsak Kh.pdf"
 };
 
 export const skills: Skill[] = [
