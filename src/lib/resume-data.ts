@@ -181,7 +181,7 @@ export const educations: Education[] = [
     duration: { en: "Graduated 2017", th: "จบการศึกษา 2560" }
   },
   {
-    institution: { en: "Wang Noi Wittyapoom School", th: "โรงเรียนวังน้อยวิทยาภูมิ" },
+    institution: { en: "Wang Noi Witthayaphoom School", th: "โรงเรียนวังน้อยวิทยาภูมิ" },
     degree: { en: "Middle School (M.3)", th: "ม.3" },
     duration: { en: "Graduated 2014", th: "จบการศึกษา 2557" }
   }
