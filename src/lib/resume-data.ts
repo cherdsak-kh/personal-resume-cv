@@ -32,8 +32,8 @@ export const personalInfo = {
   location: { en: "Ramkhamhaeng 24, Bang Kapi, Bangkok, TH", th: "รามคำแหง 24, บางกะปิ, กรุงเทพมหานคร ประเทศไทย" },
   profileImage: "/profile.jpg",
   summary: {
-    en: "I have experience working on both the front-end user interfaces and back-end data systems to build practical and reliable web applications. Additionally, I enjoy learning about new tools and simple AI technologies to help streamline daily workflows and support team tasks efficiently.",
-    th: "ผมมีประสบการณ์และความสนใจในการพัฒนาเว็บแอปพลิเคชัน ทั้งส่วนการสร้างหน้าเว็บสำหรับผู้ใช้งาน (Frontend) และการจัดการระบบข้อมูลหลังบ้าน (Backend) เพื่อให้ระบบสามารถทำงานร่วมกันได้อย่างราบรื่นและใช้งานได้จริง นอกจากนี้ ผมชอบศึกษาและนำเครื่องมือใหม่ๆ รวมถึงเทคโนโลยี AI มาปรับใช้ในงานเพื่อช่วยเพิ่มความสะดวกและลดขั้นตอนการทำงานในทีมครับ"
+    en: "I have a hybrid background in IT Operations and Software Development, with experience ranging from managing infrastructure and providing technical support to building practical full-stack web applications. Additionally, I enjoy leveraging new tools and AI technologies to solve technical challenges, streamline workflows, and support my team efficiently.",
+    th: "ผมมีประสบการณ์แบบผสมผสานทั้งด้าน IT Operations และการพัฒนาระบบ (Software Development) มีความสามารถดูแลตั้งแต่ระบบโครงสร้างพื้นฐาน การซัพพอร์ตผู้ใช้งาน ไปจนถึงการพัฒนาเว็บแอปพลิเคชัน (Frontend & Backend) ให้ใช้งานได้จริง นอกจากนี้ ผมชอบศึกษาและนำเครื่องมือใหม่ๆ รวมถึงเทคโนโลยี AI มาประยุกต์ใช้เพื่อแก้ไขปัญหาทางเทคนิคและลดขั้นตอนการทำงานในทีมอย่างมีประสิทธิภาพครับ"
   },
   email: "cherd8524@gmail.com",
   phone: "081-116-8524",
