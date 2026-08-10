@@ -177,7 +177,7 @@ export const educations: Education[] = [
   },
   {
     institution: { en: "Ayutthayanusorn School", th: "โรงเรียนอยุธยานุสรณ์" },
-    degree: { en: "High School (M.6)", th: "ม.6" },
+    degree: { en: "High School (M.6) - Mathematics-English Program", th: "ม.6 (สายคณิตศาสตร์-ภาษาอังกฤษ)" },
     duration: { en: "Graduated 2017", th: "จบการศึกษา 2560" }
   },
   {
