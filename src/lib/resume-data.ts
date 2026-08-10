@@ -85,7 +85,7 @@ export const skills: Skill[] = [
 
 export const experiences: Experience[] = [
   {
-    company: { en: "Vekin (Thailand) Co.,Ltd.", th: "บริษัท เวคิน (ประเทศไทย) จำกัด" },
+    company: { en: "VEKIN (THAILAND) CO., LTD.", th: "บริษัท เวคิน (ประเทศไทย) จำกัด" },
     role: { en: "Backend Developer", th: "Backend Developer" },
     duration: { en: "SEP 2025 - MAR 2026", th: "ก.ย. 2568 - มี.ค. 2569" },
     achievements: {
@@ -108,7 +108,7 @@ export const experiences: Experience[] = [
     }
   },
   {
-    company: { en: "ABSOLUTE WELLNESS COMPANY LIMITED", th: "บริษัท แอ็บโซลูท เวลเนส จำกัด" },
+    company: { en: "ABSOLUTE HEALTH MEDICAL SERVICES CO., LTD.", th: "บริษัท แอ็บโซลูท เฮลธ์ เมดิคอล เซอร์วิสเซส จำกัด" },
     role: { en: "IT Operation Support", th: "IT Operation Support" },
     duration: { en: "OCT 2023 - JUL 2025", th: "ต.ค. 2566 - ก.ค. 2568" },
     achievements: {
@@ -129,8 +129,8 @@ export const experiences: Experience[] = [
     }
   },
   {
-    company: { en: "Dungbhumi Corporation Co.,Ltd.", th: "บริษัท ดังภูมิ จำกัด" },
-    role: { en: "Junior Frontend Developer (Outsource)", th: "Junior Frontend Developer (Outsource)" },
+    company: { en: "DUNGBHUMI CORPORATION CO., LTD.", th: "บริษัท ดังภูมิ คอร์ปอเรชั่น จำกัด" },
+    role: { en: "Frontend Developer (Outsource)", th: "Frontend Developer (Outsource)" },
     duration: { en: "MAY 2023 - AUG 2023", th: "พ.ค. 2566 - ส.ค. 2566" },
     achievements: {
       en: [
@@ -147,7 +147,7 @@ export const experiences: Experience[] = [
   },
   {
     company: { en: "The Stock Exchange of Thailand", th: "ตลาดหลักทรัพย์แห่งประเทศไทย" },
-    role: { en: "Junior Software Tester & DAP Operator (Outsource)", th: "Junior Software Tester & DAP Operator (Outsource)" },
+    role: { en: "DAP Operator and Tester (Outsource)", th: "DAP Operator and Tester (Outsource)" },
     duration: { en: "MAR 2022 - APR 2023", th: "มี.ค. 2565 - เม.ย. 2566" },
     achievements: {
       en: [
