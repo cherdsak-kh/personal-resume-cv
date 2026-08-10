@@ -109,20 +109,22 @@ export const experiences: Experience[] = [
   },
   {
     company: { en: "ABSOLUTE WELLNESS COMPANY LIMITED", th: "บริษัท แอ็บโซลูท เวลเนส จำกัด" },
-    role: { en: "Backend Developer", th: "Backend Developer" },
+    role: { en: "IT Operation Support & Back-end Developer", th: "IT Operation Support & Back-end Developer" },
     duration: { en: "OCT 2023 - JUL 2025", th: "ต.ค. 2566 - ก.ค. 2568" },
     achievements: {
       en: [
-        "Designed and developed secure RESTful APIs with Node.js and Express.js, minimizing data latency between frontend and backend systems.",
-        "Assisted in setting up and managing infrastructure including MySQL, MongoDB, and Cloudflare R2, optimizing database queries to cut data retrieval times by 20%.",
-        "Configured secure reverse proxies using Nginx Proxy Manager and managed environment variables securely via Infisical.",
-        "Partnered with Frontend and UX/UI teams to resolve cross-origin data communication barriers and enhance platform stability."
+        "Engineered an internal IT Helpdesk application using LINE LIFF, Express.js, and Bootstrap, with Supabase integration and automated LINE notifications, streamlining issue tracking and resolution.",
+        "Designed secure RESTful APIs with Node.js and Express.js, and managed core infrastructure (MySQL, MongoDB, Cloudflare R2), optimizing database queries to cut data retrieval times by 20%.",
+        "Managed end-to-end IT operations including network/server maintenance, secure reverse proxies (Nginx Proxy Manager), secrets management (Infisical), and routine data backups.",
+        "Facilitated the deployment of a new Clinic Management System by collaborating with external developers, conducting UAT, and delivering comprehensive training to medical staff.",
+        "Provided daily technical support and hardware provisioning (Onboarding) for cross-functional teams, while effectively managing IT assets and vendor relations."
       ],
       th: [
-        "ออกแบบและพัฒนา RESTful API ด้วย Node.js และ Express.js ลดความหน่วงในการรับส่งข้อมูลระหว่างหน้าบ้านและหลังบ้าน",
-        "มีส่วนร่วมในการติดตั้งและจัดการโครงสร้างพื้นฐาน (MySQL, MongoDB, Cloudflare R2) รวมถึงทำ Query Optimization เพื่อลดเวลาดึงข้อมูลลง 20%",
-        "ติดตั้งและจัดการ Nginx Proxy Manager เพื่อควบคุมการเข้าถึงระบบ และใช้งาน Infisical ในการจัดการความปลอดภัยของข้อมูล (Secrets Management)",
-        "ประสานงานทีม Frontend และ UX/UI แก้ไขปัญหาข้อจำกัดการสื่อสารข้อมูล ช่วยเพิ่มความเสถียรให้แพลตฟอร์ม"
+        "พัฒนาระบบแจ้งซ่อมไอทีภายใน (Helpdesk) ผ่าน LINE LIFF ด้วย Express.js และ Bootstrap พร้อมฐานข้อมูล Supabase และระบบแจ้งเตือนอัตโนมัติ ช่วยเปลี่ยนจากการแจ้งผ่านแชทให้เป็นระบบที่ติดตาม log ได้",
+        "ออกแบบ RESTful API และจัดการโครงสร้างพื้นฐาน (MySQL, MongoDB, Cloudflare R2) พร้อมทำ Query Optimization ซึ่งช่วยลดเวลาการดึงข้อมูลลง 20%",
+        "ดูแลงาน IT Operations ทั้งระบบเครือข่าย, เซิร์ฟเวอร์, การทำ Reverse Proxy (Nginx Proxy Manager), การจัดการความปลอดภัย (Infisical) และการทำระบบสำรองข้อมูลสำคัญของคลินิก",
+        "ประสานงานกับทีมผู้พัฒนาภายนอกเพื่อติดตั้งระบบจัดการคลินิก โดยมีส่วนร่วมตั้งแต่เริ่มโปรเจกต์ ทดสอบระบบ (UAT) ติดตั้งใช้งาน และจัดอบรมให้กับทีมแพทย์และพนักงาน",
+        "ให้บริการแก้ไขปัญหาไอที จัดเตรียมอุปกรณ์ (Onboarding) และบริหารจัดการทรัพย์สินไอที (IT Asset) รวมถึงประสานงานกับ Vendor ภายนอกเพื่อจัดซื้อและซ่อมบำรุง"
       ]
     }
   },
