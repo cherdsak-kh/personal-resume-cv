@@ -28,12 +28,12 @@ export interface Project {
 
 export const personalInfo = {
   name: { en: "Cherdsak Khamlai", th: "เชิดศักดิ์ คำไล้" },
-  title: { en: "Software Developer", th: "Software Developer" },
+  title: { en: "Full Stack Developer", th: "Full Stack Developer" },
   location: { en: "Ramkhamhaeng 24, Bang Kapi, Bangkok, TH", th: "รามคำแหง 24, บางกะปิ, กรุงเทพมหานคร ประเทศไทย" },
   profileImage: "/profile.jpg",
   summary: {
-    en: "Software Developer experienced in both Backend (Node.js, TypeScript) and Frontend (React.js, HTML/CSS) development, along with DevOps tools. Passionate about building robust and practical web applications. Committed to continuous learning, effective teamwork, and leveraging AI integrations to optimize workflows.",
-    th: "นักพัฒนาซอฟต์แวร์ที่มีประสบการณ์ทำงานทั้งฝั่ง Backend (Node.js, TypeScript) และ Frontend (React.js, HTML/CSS) รวมถึงการใช้เครื่องมือด้าน DevOps สนใจในการพัฒนาเว็บแอปพลิเคชันที่สามารถตอบสนองการใช้งานจริงได้อย่างมีประสิทธิภาพ ให้ความสำคัญกับการเรียนรู้สิ่งใหม่ การทำงานร่วมกับทีม และการประยุกต์ใช้ AI เพื่อช่วยในการทำงาน"
+    en: "I have experience working on both the front-end user interfaces and back-end data systems to build practical and reliable web applications. Additionally, I enjoy learning about new tools and simple AI technologies to help streamline daily workflows and support team tasks efficiently.",
+    th: "ผมมีประสบการณ์และความสนใจในการพัฒนาเว็บแอปพลิเคชัน ทั้งส่วนการสร้างหน้าเว็บสำหรับผู้ใช้งาน (Frontend) และการจัดการระบบข้อมูลหลังบ้าน (Backend) เพื่อให้ระบบสามารถทำงานร่วมกันได้อย่างราบรื่นและใช้งานได้จริง นอกจากนี้ ผมชอบศึกษาและนำเครื่องมือใหม่ๆ รวมถึงเทคโนโลยี AI มาปรับใช้ในงานเพื่อช่วยเพิ่มความสะดวกและลดขั้นตอนการทำงานในทีมครับ"
   },
   email: "cherd8524@gmail.com",
   phone: "081-116-8524",
@@ -172,6 +172,16 @@ export const educations: Education[] = [
     institution: { en: "Non-Commissioned Officer School, Royal Thai Army", th: "โรงเรียนนายสิบทหารบก" },
     degree: { en: "Army Non-Commissioned Officer Student", th: "นักเรียนนายสิบทหารบก (เหล่าทหารม้า)" },
     duration: { en: "2017 - 2018", th: "2560 - 2561" }
+  },
+  {
+    institution: { en: "Ayutthayanusorn School", th: "โรงเรียนอยุธยานุสรณ์" },
+    degree: { en: "High School (M.6)", th: "ม.6" },
+    duration: { en: "Graduated 2017", th: "จบการศึกษา 2560" }
+  },
+  {
+    institution: { en: "Wang Noi Wittyapoom School", th: "โรงเรียนวังน้อยวิทยาภูมิ" },
+    degree: { en: "Middle School (M.3)", th: "ม.3" },
+    duration: { en: "Graduated 2014", th: "จบการศึกษา 2557" }
   }
 ];
 
