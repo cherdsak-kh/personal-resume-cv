@@ -79,8 +79,8 @@ export const skills: Skill[] = [
   { name: "Apache", category: "DevOps, Tools & Concepts" },
   { name: "Infisical", category: "DevOps, Tools & Concepts" },
   { name: "HashiCorp Vault", category: "DevOps, Tools & Concepts" },
-  { name: "Git, GitHub, GitLab", category: "DevOps, Tools & Concepts" },
-  { name: "Agentic AI IDEs (Cursor, Kiro)", category: "DevOps, Tools & Concepts" }
+  { name: "GitHub, GitLab, Codex, Antigravity, Claude Code CLI", category: "DevOps, Tools & Concepts" },
+  { name: "Agentic AI IDEs (Cursor, Kiro, Antigravity)", category: "DevOps, Tools & Concepts" }
 ];
 
 export const experiences: Experience[] = [
@@ -161,6 +161,25 @@ export const experiences: Experience[] = [
         "จัดการโครงสร้างข้อมูลลูกค้าและให้ On-site Support เพื่อรักษาความน่าเชื่อถือและความเสถียรสูงสุดของระบบ"
       ]
     }
+  },
+  {
+    company: { en: "18th Military District", th: "มณฑลทหารบกที่ 18" },
+    role: { en: "Military Instructor", th: "ครูฝึกทหาร" },
+    duration: { en: "MAY 2018 - JAN 2022", th: "พ.ค. 2561 - ม.ค. 2565" },
+    achievements: {
+      en: [
+        "Conducted comprehensive military training and evaluations in accordance with Royal Thai Army standards, fostering discipline and operational efficiency among personnel.",
+        "Executed rapid-response disaster relief operations, providing timely assistance and support to communities affected by natural disasters.",
+        "Provided high-level security and VIP protection during special royal missions, ensuring strict adherence to maximum security protocols.",
+        "Performed area patrols and maintained regional security to uphold public safety and operational readiness."
+      ],
+      th: [
+        "ดำเนินการฝึกอบรมและประเมินผลกำลังพลตามมาตรฐานของกองทัพบก เพื่อเสริมสร้างระเบียบวินัยและประสิทธิภาพในการปฏิบัติงาน",
+        "ปฏิบัติภารกิจบรรเทาสาธารณภัยและให้ความช่วยเหลือประชาชนในพื้นที่ที่ได้รับผลกระทบจากภัยพิบัติทางธรรมชาติอย่างทันท่วงที",
+        "ถวายความปลอดภัยและรักษาความสงบเรียบร้อยในภารกิจพิเศษต่างๆ อย่างรัดกุมและเป็นไปตามมาตรการรักษาความปลอดภัยสูงสุด",
+        "ปฏิบัติงานลาดตระเวนและรักษาความปลอดภัยในพื้นที่รับผิดชอบ เพื่อรักษาความสงบเรียบร้อยให้แก่ส่วนรวม"
+      ]
+    }
   }
 ];
 
@@ -173,17 +192,12 @@ export const educations: Education[] = [
   {
     institution: { en: "Non-Commissioned Officer School, Royal Thai Army", th: "โรงเรียนนายสิบทหารบก" },
     degree: { en: "Army Non-Commissioned Officer Student", th: "นักเรียนนายสิบทหารบก (เหล่าทหารม้า)" },
-    duration: { en: "2017 - 2018", th: "2560 - 2561" }
+    duration: { en: "Graduated 2018", th: "สำเร็จการศึกษาปี 2561" }
   },
   {
     institution: { en: "Ayutthayanusorn School", th: "โรงเรียนอยุธยานุสรณ์" },
-    degree: { en: "High School (M.6) - Mathematics-English Program", th: "ม.6 (สายคณิตศาสตร์-ภาษาอังกฤษ)" },
-    duration: { en: "Graduated 2017", th: "จบการศึกษา 2560" }
-  },
-  {
-    institution: { en: "Wang Noi Witthayaphoom School", th: "โรงเรียนวังน้อยวิทยาภูมิ" },
-    degree: { en: "Middle School (M.3)", th: "ม.3" },
-    duration: { en: "Graduated 2014", th: "จบการศึกษา 2557" }
+    degree: { en: "High School (M.6) (Mathematics-English Program)", th: "มัธยมศึกษาตอนปลาย (ม.6) (สายการเรียนคณิตศาสตร์-ภาษาอังกฤษ)" },
+    duration: { en: "Graduated 2017", th: "สำเร็จการศึกษาปี 2560" }
   }
 ];
 
