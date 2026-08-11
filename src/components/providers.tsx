@@ -59,10 +59,12 @@ export function Providers({ children, ...props }: React.ComponentProps<typeof Ne
     "Language": { en: "Language", th: "ภาษา" },
     "Education": { en: "Education", th: "การศึกษา" },
     "Projects": { en: "Projects & Open Source", th: "ผลงานและโปรเจกต์" },
-    "Frontend": { en: "Frontend", th: "ระบบหน้าบ้าน (Frontend)" },
-    "Backend & APIs": { en: "Backend & APIs", th: "ระบบหลังบ้านและ API" },
-    "Databases": { en: "Databases", th: "ระบบฐานข้อมูล" },
-    "DevOps, Tools & Concepts": { en: "DevOps, Tools & Concepts", th: "ระบบปฏิบัติการและเครื่องมือ" },
+    "Languages": { en: "Languages", th: "Languages" },
+    "Backend Frameworks": { en: "Backend Frameworks", th: "Backend Frameworks" },
+    "Frontend Frameworks": { en: "Frontend Frameworks", th: "Frontend Frameworks" },
+    "DevOps & Infrastructure": { en: "DevOps & Infrastructure", th: "DevOps & Infrastructure" },
+    "Database & Storage": { en: "Database & Storage", th: "Database & Storage" },
+    "Tools": { en: "Tools", th: "Tools" },
   };
 
   const t = (key: string) => {

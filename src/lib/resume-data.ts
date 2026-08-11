@@ -2,7 +2,7 @@ export type LocalizedString = { en: string; th: string };
 
 export interface Skill {
   name: string;
-  category: 'Backend & APIs' | 'Frontend' | 'Databases' | 'DevOps, Tools & Concepts';
+  category: 'Languages' | 'Backend Frameworks' | 'Frontend Frameworks' | 'DevOps & Infrastructure' | 'Database & Storage' | 'Tools';
 }
 
 export interface Experience {
@@ -44,43 +44,47 @@ export const personalInfo = {
 };
 
 export const skills: Skill[] = [
-  // Backend & APIs
-  { name: "TypeScript", category: "Backend & APIs" },
-  { name: "JavaScript", category: "Backend & APIs" },
-  { name: "Python", category: "Backend & APIs" },
-  { name: "PHP", category: "Backend & APIs" },
-  { name: "Node.js (Express, NestJS)", category: "Backend & APIs" },
-  { name: "Python (FastAPI, Django)", category: "Backend & APIs" },
-  { name: "PHP (Laravel)", category: "Backend & APIs" },
+  // Languages
+  { name: "TypeScript", category: "Languages" },
+  { name: "JavaScript", category: "Languages" },
+  { name: "Python", category: "Languages" },
+  { name: "PHP", category: "Languages" },
 
-  // Frontend
-  { name: "React.js", category: "Frontend" },
-  { name: "Next.js", category: "Frontend" },
-  { name: "HTML/CSS", category: "Frontend" },
-  { name: "Tailwind CSS", category: "Frontend" },
-  { name: "Bootstrap", category: "Frontend" },
+  // Backend Frameworks
+  { name: "Node.js (Express, NestJS)", category: "Backend Frameworks" },
+  { name: "PHP (Laravel)", category: "Backend Frameworks" },
+  { name: "Python (FastAPI, Django)", category: "Backend Frameworks" },
 
-  // Databases
-  { name: "PostgreSQL", category: "Databases" },
-  { name: "MySQL", category: "Databases" },
-  { name: "MongoDB", category: "Databases" },
-  { name: "Supabase", category: "Databases" },
-  { name: "Cloudflare R2", category: "Databases" },
-  { name: "Azure Blob Storage", category: "Databases" },
+  // Frontend Frameworks
+  { name: "React.js", category: "Frontend Frameworks" },
+  { name: "Next.js", category: "Frontend Frameworks" },
+  { name: "HTML/CSS", category: "Frontend Frameworks" },
+  { name: "Tailwind CSS", category: "Frontend Frameworks" },
+  { name: "Bootstrap", category: "Frontend Frameworks" },
 
-  // DevOps, Tools & Concepts
-  { name: "Docker (Dockerfile, Container Management)", category: "DevOps, Tools & Concepts" },
-  { name: "CI/CD Pipelines", category: "DevOps, Tools & Concepts" },
-  { name: "Linux/Windows Server (SSH)", category: "DevOps, Tools & Concepts" },
-  { name: "PM2", category: "DevOps, Tools & Concepts" },
-  { name: "Nginx Proxy Manager", category: "DevOps, Tools & Concepts" },
-  { name: "Cloudflare", category: "DevOps, Tools & Concepts" },
-  { name: "Portainer", category: "DevOps, Tools & Concepts" },
-  { name: "Apache", category: "DevOps, Tools & Concepts" },
-  { name: "Infisical", category: "DevOps, Tools & Concepts" },
-  { name: "HashiCorp Vault", category: "DevOps, Tools & Concepts" },
-  { name: "GitHub, GitLab, Codex, Antigravity, Claude Code CLI", category: "DevOps, Tools & Concepts" },
-  { name: "Agentic AI IDEs (Cursor, Kiro, Antigravity)", category: "DevOps, Tools & Concepts" }
+  // DevOps & Infrastructure
+  { name: "Cloudflare", category: "DevOps & Infrastructure" },
+  { name: "Nginx Proxy Manager", category: "DevOps & Infrastructure" },
+  { name: "Portainer", category: "DevOps & Infrastructure" },
+  { name: "Linux/Windows Server (SSH)", category: "DevOps & Infrastructure" },
+  { name: "CI/CD Pipelines", category: "DevOps & Infrastructure" },
+  { name: "Docker (Dockerfile, Container Management)", category: "DevOps & Infrastructure" },
+
+  // Database & Storage
+  { name: "MySQL", category: "Database & Storage" },
+  { name: "PostgreSQL", category: "Database & Storage" },
+  { name: "Supabase", category: "Database & Storage" },
+  { name: "MongoDB", category: "Database & Storage" },
+  { name: "Cloudflare R2", category: "Database & Storage" },
+  { name: "Azure Blob Storage", category: "Database & Storage" },
+
+  // Tools
+  { name: "GitHub", category: "Tools" },
+  { name: "GitLab", category: "Tools" },
+  { name: "Codex", category: "Tools" },
+  { name: "Antigravity", category: "Tools" },
+  { name: "Agentic AI IDEs (Cursor, Kiro, Antigravity)", category: "Tools" },
+  { name: "Claude Code CLI", category: "Tools" }
 ];
 
 export const experiences: Experience[] = [
