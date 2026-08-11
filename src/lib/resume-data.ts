@@ -198,6 +198,11 @@ export const educations: Education[] = [
     institution: { en: "Ayutthayanusorn School", th: "โรงเรียนอยุธยานุสรณ์" },
     degree: { en: "High School (M.6) (Mathematics-English Program)", th: "มัธยมศึกษาตอนปลาย (ม.6) (สายการเรียนคณิตศาสตร์-ภาษาอังกฤษ)" },
     duration: { en: "Graduated 2017", th: "สำเร็จการศึกษาปี 2560" }
+  },
+  {
+    institution: { en: "Wang Noi Witthayaphoom School", th: "โรงเรียนวังน้อยวิทยาภูมิ" },
+    degree: { en: "Middle School (M.3)", th: "ม.3" },
+    duration: { en: "Graduated 2014", th: "จบการศึกษา 2557" }
   }
 ];
 
