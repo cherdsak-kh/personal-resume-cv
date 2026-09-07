@@ -32,8 +32,8 @@ export const personalInfo = {
   location: { en: "Ramkhamhaeng 24, Bang Kapi, Bangkok, TH", th: "รามคำแหง 24, บางกะปิ, กรุงเทพมหานคร ประเทศไทย" },
   profileImage: "/profile.jpg",
   summary: {
-    en: "Backend Developer with hands-on experience in building and maintaining service-oriented architectures, RESTful APIs, and database schemas using Node.js (Nest.js) and Python (FastAPI, Django). Experienced in multi-service orchestration, inter-service data integration, and collaborating with cross-functional teams including researchers and Data Scientists. Complemented by a strong foundation in IT operations, infrastructure, and end-to-end technical troubleshooting.",
-    th: "นักพัฒนาแบ็กเอนด์ (Backend Developer) ที่มีประสบการณ์จริงในการออกแบบและพัฒนาระบบสถาปัตยกรรมแบบ Service-Oriented, การสร้าง RESTful API และการออกแบบ Database Schema ด้วย Node.js (Nest.js) และ Python (FastAPI, Django) มีความเชี่ยวชาญในการจัดการหลายเซอร์วิสควบคู่กัน การเชื่อมต่อข้อมูลระหว่างระบบ และการทำงานร่วมกับทีมสหสาขา เช่น นักวิจัยและ Data Scientist พร้อมด้วยพื้นฐานที่มั่นคงด้าน IT Operations และการดูแลระบบโครงสร้างพื้นฐาน"
+    en: "Hi, I'm Benz (Cherdsak). I am driven by continuous learning and the joy of translating technology into practical, real-world solutions. My background in IT Operations and technical support gave me a deep understanding of end-user needs and system reliability, which naturally guided my transition into full-stack software development. I am committed to advancing my backend architecture capabilities to build scalable, resilient systems that drive long-term impact for the organization.",
+    th: "สวัสดีครับ ผมชื่อเบนซ์ครับ ผมเป็นคนที่ชอบศึกษาเทคโนโลยีใหม่ๆ และสนุกกับการนำเครื่องมือที่เหมาะสมมาสร้างให้เป็นระบบที่ใช้งานได้จริง เส้นทางของผมเริ่มต้นจากการดูแลโครงสร้างพื้นฐานและซัพพอร์ตผู้ใช้งาน ซึ่งทำให้ผมเข้าใจมุมมองของคนทำงานจริง ก่อนจะพัฒนาต่อยอดมาเป็นนักพัฒนาเว็บแอปพลิเคชันแบบเต็มตัว ผมตั้งใจที่จะพัฒนาขีดความสามารถด้านระบบหลังบ้าน (Backend) และการออกแบบสถาปัตยกรรมซอฟต์แวร์ให้แข็งแกร่งยิ่งขึ้น เพื่อสร้างระบบที่รองรับการเติบโตและตอบโจทย์องค์กรในระยะยาวครับ"
   },
   email: "cherd8524@gmail.com",
   phone: "081-116-8524",
@@ -92,13 +92,13 @@ export const experiences: Experience[] = [
     duration: { en: "APR 2026 - PRESENT", th: "เม.ย. 2569 - ปัจจุบัน" },
     achievements: {
       en: [
-        "Gathered requirements and engineered \"EasyBook\", a full-stack facility and event booking platform (90% completed) serving school personnel via a mobile-first LINE LIFF web application.",
+        "Gathered requirements and engineered \"EasyBook\", a full-stack facility and event booking platform serving school personnel via a mobile-first LINE LIFF web application.",
         "Architected normalized relational database schemas using Prisma ORM on PostgreSQL and developed robust RESTful APIs with NestJS to manage booking schedules and prevent reservation conflicts.",
         "Built responsive user interfaces using React, Vite, TypeScript, and Tailwind CSS, leveraging OpenAPI-generated types for strict type safety between frontend and backend.",
         "Collaborated with a DevOps engineer to deploy the system into production while conducting hands-on training sessions and handover documentation for school staff."
       ],
       th: [
-        "สำรวจ Requirement และพัฒนาระบบจองสถานที่จัดกิจกรรม \"EasyBook\" แบบ Full Stack (ดำเนินการแล้วเสร็จ 90%) เพื่อรองรับการใช้งานของบุคลากรภายในโรงเรียนผ่าน LINE LIFF",
+        "สำรวจ Requirement และพัฒนาระบบจองสถานที่จัดกิจกรรม \"EasyBook\" แบบ Full Stack เพื่อรองรับการใช้งานของบุคลากรภายในโรงเรียนผ่าน LINE LIFF",
         "ออกแบบ Database Schema แบบ Relational ด้วย Prisma ORM บน PostgreSQL และพัฒนา RESTful API ด้วย NestJS เพื่อจัดการคิวการจอง การอนุมัติ และป้องกันการจองสถานที่ซ้ำซ้อน",
         "พัฒนาหน้าเว็บ Responsive รองรับการใช้งานบนมือถือด้วย React, Vite, TypeScript และ Tailwind CSS พร้อมสร้าง Type Definition อัตโนมัติจาก OpenAPI เพื่อความแม่นยำในการเชื่อมต่อระหว่างหน้าบ้านและหลังบ้าน",
         "ประสานงานร่วมกับผู้ดูแลระบบ (DevOps Engineer) ในการขึ้นระบบจริง (Production) พร้อมจัดอบรมสอนการใช้งานและส่งมอบคู่มือแก่บุคลากรโรงเรียน"
