@@ -32,8 +32,8 @@ export const personalInfo = {
   location: { en: "Ramkhamhaeng 24, Bang Kapi, Bangkok, TH", th: "รามคำแหง 24, บางกะปิ, กรุงเทพมหานคร ประเทศไทย" },
   profileImage: "/profile.jpg",
   summary: {
-    en: "I have a hybrid background in IT Operations and Software Development, with experience ranging from managing infrastructure and providing technical support to building practical full-stack web applications. Additionally, I enjoy leveraging new tools and AI technologies to solve technical challenges, streamline workflows, and support my team efficiently.",
-    th: "ผมมีประสบการณ์แบบผสมผสานทั้งด้าน IT Operations และการพัฒนาระบบ (Software Development) มีความสามารถดูแลตั้งแต่ระบบโครงสร้างพื้นฐาน การซัพพอร์ตผู้ใช้งาน ไปจนถึงการพัฒนาเว็บแอปพลิเคชัน (Frontend & Backend) ให้ใช้งานได้จริง นอกจากนี้ ผมชอบศึกษาและนำเครื่องมือใหม่ๆ รวมถึงเทคโนโลยี AI มาประยุกต์ใช้เพื่อแก้ไขปัญหาทางเทคนิคและลดขั้นตอนการทำงานในทีมอย่างมีประสิทธิภาพครับ"
+    en: "Backend Developer with hands-on experience in building and maintaining service-oriented architectures, RESTful APIs, and database schemas using Node.js (Nest.js) and Python (FastAPI, Django). Experienced in multi-service orchestration, inter-service data integration, and collaborating with cross-functional teams including researchers and Data Scientists. Complemented by a strong foundation in IT operations, infrastructure, and end-to-end technical troubleshooting.",
+    th: "นักพัฒนาแบ็กเอนด์ (Backend Developer) ที่มีประสบการณ์จริงในการออกแบบและพัฒนาระบบสถาปัตยกรรมแบบ Service-Oriented, การสร้าง RESTful API และการออกแบบ Database Schema ด้วย Node.js (Nest.js) และ Python (FastAPI, Django) มีความเชี่ยวชาญในการจัดการหลายเซอร์วิสควบคู่กัน การเชื่อมต่อข้อมูลระหว่างระบบ และการทำงานร่วมกับทีมสหสาขา เช่น นักวิจัยและ Data Scientist พร้อมด้วยพื้นฐานที่มั่นคงด้าน IT Operations และการดูแลระบบโครงสร้างพื้นฐาน"
   },
   email: "cherd8524@gmail.com",
   phone: "081-116-8524",
@@ -79,12 +79,10 @@ export const skills: Skill[] = [
   { name: "Azure Blob Storage", category: "Database & Storage" },
 
   // Tools
-  { name: "GitHub", category: "Tools" },
-  { name: "GitLab", category: "Tools" },
-  { name: "Codex", category: "Tools" },
-  { name: "Antigravity", category: "Tools" },
-  { name: "Agentic AI IDEs (Cursor, Kiro, Antigravity)", category: "Tools" },
-  { name: "Claude Code CLI", category: "Tools" }
+  { name: "Git, GitHub, GitLab", category: "Tools" },
+  { name: "Postman", category: "Tools" },
+  { name: "Swagger / OpenAPI", category: "Tools" },
+  { name: "Docker", category: "Tools" }
 ];
 
 export const experiences: Experience[] = [
@@ -94,20 +92,20 @@ export const experiences: Experience[] = [
     duration: { en: "SEP 2025 - MAR 2026", th: "ก.ย. 2568 - มี.ค. 2569" },
     achievements: {
       en: [
-        "Developed features and RESTful APIs primarily using Nest.js and Node.js to meet business requirements.",
-        "Accelerated Agile development cycles by 30% utilizing Agentic AI IDEs (Cursor, Kiro, Antigravity IDE) for rapid prototyping and implementation.",
-        "Engineered data automation workflows by integrating Gemini API for dynamic data generation and implementing OCR technology to extract and store data into the database.",
-        "Collaborated within Agile/Scrum teams (PO, DevOps, Frontend, QA) to drive on-time production deployments.",
-        "Authored Swagger documentation and conducted testing via Postman/Bruno, reducing integration conflicts by 25%.",
-        "Integrated backend systems with enterprise infrastructure, including HashiCorp Vault for secrets, Azure Blob Storage, PostgreSQL, and Redis."
+        "Maintained and actively developed 3 concurrent backend services across diverse tech stacks (FastAPI, Nest.js, Django), dynamically prioritizing tasks and delivering features according to active project requirements.",
+        "Co-designed database schemas and relational data models on PostgreSQL, developing comprehensive CRUD RESTful APIs for a greenhouse gas and carbon emission platform in close collaboration with researchers.",
+        "Implemented mathematical calculation models and complex data processing logic within the climate finance service, collaborating with Data Scientists to successfully achieve 60–70% project milestone completion.",
+        "Refactored existing codebase and developed flexible API endpoints with advanced query parameters for the central Master Data service, integrating third-party data to serve as a reliable single source of truth for internal enterprise services.",
+        "Engineered specialized API endpoints on DEMP (Digital Energy Management Platform), a real-time large-scale energy analytics system, enabling seamless data exchange with the Climate Finance platform.",
+        "Authored Swagger/OpenAPI documentation and conducted comprehensive Postman testing for over 20+ endpoints, while integrating backend systems with PostgreSQL, Redis for caching, and Azure Blob Storage."
       ],
       th: [
-        "พัฒนาฟีเจอร์และ RESTful API ตาม Requirement โดยใช้โครงสร้างของ Nest.js และ Node.js เป็นหลัก",
-        "ประยุกต์ใช้ AI IDEs (Cursor, Kiro, Antigravity IDE) เพื่อเร่งความเร็วในการพัฒนาและ Implement ระบบตามแนวทาง Agile ทำให้วงจรการทำโปรโตไทป์เร็วขึ้น 30%",
-        "พัฒนาระบบจัดการข้อมูลอัตโนมัติ โดยเชื่อมต่อ Gemini API เพื่อสร้างข้อมูลตั้งต้น (Data Generation) และผสานระบบ OCR เพื่อสกัดข้อความและจัดเก็บลงฐานข้อมูล",
-        "ร่วมทีมแบบ Agile/Scrum (PO, DevOps, Frontend, QA) ผลักดันการส่งมอบฟีเจอร์ขึ้นระบบจริง (Production) ได้ตรงตามกำหนด",
-        "ทำเอกสาร API ด้วย Swagger และทดสอบผ่าน Postman/Bruno ลดข้อผิดพลาดในการเชื่อมต่อระบบลง 25%",
-        "นำเทคโนโลยีโครงสร้างพื้นฐานมาประยุกต์ใช้ร่วมกับระบบ Backend เช่น HashiCorp Vault (จัดการความปลอดภัย), Azure Blob Storage, PostgreSQL และ Redis"
+        "ดูแลและพัฒนา 3 เซอร์วิสหลักของบริษัทควบคู่กัน (FastAPI, Nest.js, Django) บริหารจัดการและสลับการทำงานตาม Requirement ของแต่ละโปรเจกต์ได้อย่างคล่องตัวและส่งมอบงานตรงตามกำหนด",
+        "ร่วมออกแบบ Database Schema และแบบจำลองข้อมูลบน PostgreSQL พร้อมพัฒนา RESTful API (CRUD) ครบวงจรสำหรับแพลตฟอร์มวิเคราะห์การปล่อยก๊าซเรือนกระจก ร่วมกับทีมนักวิจัย",
+        "พัฒนาตรรกะการคำนวณทางคณิตศาสตร์และการประมวลผลข้อมูลตามหลัก Data Science ร่วมกับ Data Scientist ผลักดันให้โปรเจกต์สำเร็จลุล่วงไปได้กว่า 60–70%",
+        "ทำการ Refactor โครงสร้างโค้ดเดิมและพัฒนา API เพิ่มเติมพร้อม Parameter ที่ยืดหยุ่น สำหรับระบบ Master Data เพื่อเชื่อมโยงข้อมูลจากภายนอกและให้บริการข้อมูลส่วนกลางแก่ทุกเซอร์วิสในองค์กร",
+        "พัฒนา API บนแพลตฟอร์ม DEMP (ระบบวิเคราะห์ข้อมูลพลังงานขนาดใหญ่แบบเรียลไทม์) เพื่อดึงและส่งต่อข้อมูลที่จำเป็นไปยังระบบ Climate Finance ได้อย่างราบรื่น",
+        "จัดทำเอกสาร Swagger/OpenAPI และทดสอบระบบด้วย Postman กว่า 20+ Endpoints ช่วยให้ทีม Frontend นำไปใช้งานได้ทันที พร้อมเชื่อมต่อระบบเข้ากับ PostgreSQL, Redis Caching, และ Azure Blob Storage"
       ]
     }
   },
