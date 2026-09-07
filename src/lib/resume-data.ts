@@ -87,6 +87,25 @@ export const skills: Skill[] = [
 
 export const experiences: Experience[] = [
   {
+    company: { en: "Freelance (Tha Khlong 1 Municipal School)", th: "ฟรีแลนซ์ (โรงเรียนเทศบาลท่าโขลง 1)" },
+    role: { en: "Freelance Full Stack Developer", th: "Freelance Full Stack Developer" },
+    duration: { en: "APR 2026 - PRESENT", th: "เม.ย. 2569 - ปัจจุบัน" },
+    achievements: {
+      en: [
+        "Gathered requirements and engineered \"EasyBook\", a full-stack facility and event booking platform (90% completed) serving school personnel via a mobile-first LINE LIFF web application.",
+        "Architected normalized relational database schemas using Prisma ORM on PostgreSQL and developed robust RESTful APIs with NestJS to manage booking schedules and prevent reservation conflicts.",
+        "Built responsive user interfaces using React, Vite, TypeScript, and Tailwind CSS, leveraging OpenAPI-generated types for strict type safety between frontend and backend.",
+        "Collaborated with a DevOps engineer to deploy the system into production while conducting hands-on training sessions and handover documentation for school staff."
+      ],
+      th: [
+        "สำรวจ Requirement และพัฒนาระบบจองสถานที่จัดกิจกรรม \"EasyBook\" แบบ Full Stack (ดำเนินการแล้วเสร็จ 90%) เพื่อรองรับการใช้งานของบุคลากรภายในโรงเรียนผ่าน LINE LIFF",
+        "ออกแบบ Database Schema แบบ Relational ด้วย Prisma ORM บน PostgreSQL และพัฒนา RESTful API ด้วย NestJS เพื่อจัดการคิวการจอง การอนุมัติ และป้องกันการจองสถานที่ซ้ำซ้อน",
+        "พัฒนาหน้าเว็บ Responsive รองรับการใช้งานบนมือถือด้วย React, Vite, TypeScript และ Tailwind CSS พร้อมสร้าง Type Definition อัตโนมัติจาก OpenAPI เพื่อความแม่นยำในการเชื่อมต่อระหว่างหน้าบ้านและหลังบ้าน",
+        "ประสานงานร่วมกับผู้ดูแลระบบ (DevOps Engineer) ในการขึ้นระบบจริง (Production) พร้อมจัดอบรมสอนการใช้งานและส่งมอบคู่มือแก่บุคลากรโรงเรียน"
+      ]
+    }
+  },
+  {
     company: { en: "VEKIN (THAILAND) CO., LTD.", th: "บริษัท เวคิน (ประเทศไทย) จำกัด" },
     role: { en: "Backend Developer", th: "Backend Developer" },
     duration: { en: "SEP 2025 - MAR 2026", th: "ก.ย. 2568 - มี.ค. 2569" },
@@ -130,23 +149,7 @@ export const experiences: Experience[] = [
       ]
     }
   },
-  {
-    company: { en: "DUNGBHUMI CORPORATION CO., LTD.", th: "บริษัท ดังภูมิ คอร์ปอเรชั่น จำกัด" },
-    role: { en: "Frontend Developer (Outsource)", th: "Frontend Developer (Outsource)" },
-    duration: { en: "MAY 2023 - AUG 2023", th: "พ.ค. 2566 - ส.ค. 2566" },
-    achievements: {
-      en: [
-        "Developed responsive web interfaces for Local Government Organization portals using HTML, CSS, and Bootstrap, while occasionally assisting with PHP backend tasks.",
-        "Built an internal CRM back-office web portal to streamline customer configurations and system settings.",
-        "Executed comprehensive front-end QA testing to identify and eliminate UI/UX bugs prior to production deployment."
-      ],
-      th: [
-        "พัฒนา Web Interface สำหรับระบบขององค์การปกครองส่วนท้องถิ่นด้วย HTML, CSS และ Bootstrap โดยรับผิดชอบส่วนหน้าบ้านเป็นหลัก และช่วยพัฒนาระบบหลังบ้าน (PHP) ในบางโอกาส",
-        "สร้างระบบหลังบ้าน (Back-office web portal) สำหรับ CRM เพื่อให้ทีมงานสามารถตั้งค่าและจัดการข้อมูลลูกค้าได้สะดวกยิ่งขึ้น",
-        "ทดสอบระบบส่วนหน้า (QA Testing) ตรวจจับและแก้ไขบั๊ก UI/UX ทั้งหมดก่อนนำระบบขึ้นใช้งานจริง (Deploy)"
-      ]
-    }
-  },
+
   {
     company: { en: "The Stock Exchange of Thailand", th: "ตลาดหลักทรัพย์แห่งประเทศไทย" },
     role: { en: "DAP Operator and Tester (Outsource)", th: "DAP Operator and Tester (Outsource)" },
