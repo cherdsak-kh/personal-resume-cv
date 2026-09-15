@@ -156,14 +156,14 @@ export const experiences: Experience[] = [
     duration: { en: "MAR 2022 - APR 2023", th: "มี.ค. 2565 - เม.ย. 2566" },
     achievements: {
       en: [
-        "Analyzed business requirements and designed comprehensive test plans for core enterprise shareholder meeting system application.",
-        "Conducted end-to-end web performance testing, collaborating with developers to isolate and resolve critical runtime bugs.",
-        "Configured client data systems and provided on-site technical support, ensuring high platform reliability and customer satisfaction."
+        "Collaborated with the outsource QA team to execute extensive test scenarios across registration and voting workflows for the DAP e-Shareholder Meeting platform, resolving critical pre-launch issues to ensure timely production deployment under SET's schedule.",
+        "Provided technical consultation and onboarding for corporate secretarial teams across 25-30+ listed companies, verifying shareholder data and agenda configurations to prevent live-meeting errors and maintain regulatory compliance.",
+        "Operated live backend systems in real time during official shareholder meetings (e-AGM) for over 25-30+ listed companies, actively monitoring quorum counts, processing live voting, and resolving technical issues to achieve 100% accurate voting outcomes and uninterrupted proceedings."
       ],
       th: [
-        "วิเคราะห์ Requirement และออกแบบ Test Plans ครอบคลุมการทดสอบแอปพลิเคชันระบบประชุมผู้ถือหุ้นขององค์กร",
-        "ทดสอบประสิทธิภาพระบบแบบ End-to-End ร่วมมือกับทีม Developer เพื่อแก้ไข Runtime Bugs ระดับวิกฤต",
-        "จัดการโครงสร้างข้อมูลลูกค้าและให้ On-site Support เพื่อรักษาความน่าเชื่อถือและความเสถียรสูงสุดของระบบ"
+        "ร่วมกับทีมทดสอบระบบ (Outsource QA Team) ดำเนินการทดสอบระบบ DAP e-Shareholder Meeting หลากหลายสถานการณ์ ครอบคลุมทั้งฟังก์ชันการลงทะเบียนและการลงคะแนน เพื่อตรวจจับและแก้ไขข้อผิดพลาดสำคัญก่อนเปิดตัว ส่งผลให้ระบบมีความพร้อมและสามารถเปิดให้บริการจริงได้ตรงตามกำหนดเวลาของตลาดหลักทรัพย์ฯ",
+        "ให้คำปรึกษาและช่วยทีมงานของบริษัทจดทะเบียนจัดเตรียมข้อมูลผู้ถือหุ้น ตรวจสอบการตั้งค่าวาระประชุม พร้อมซักซ้อมการใช้งานระบบล่วงหน้า ช่วยให้บริษัทลูกค้ากว่า 25-30+ แห่ง มีความพร้อมในการจัดประชุมอย่างถูกต้องตามข้อกำหนดของกฎหมาย และลดข้อผิดพลาดในวันงานจริง",
+        "ควบคุมและดูแลระบบหลังบ้านแบบเรียลไทม์ระหว่างการประชุมผู้ถือหุ้นสด (e-AGM) คอยมอนิเตอร์การนับองค์ประชุม การประมวลผลคะแนนเสียง และแก้ปัญหาเฉพาะหน้าทางเทคนิค ส่งผลให้การประชุมของบริษัทจดทะเบียนกว่า 25-30+ บริษัท ดำเนินไปได้อย่างราบรื่นจนจบวาระ และสรุปผลคะแนนได้อย่างถูกต้องแม่นยำ 100%"
       ]
     }
   },
