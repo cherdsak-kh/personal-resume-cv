@@ -165,6 +165,25 @@ export const experiences: Experience[] = [
         "ควบคุมและดูแลระบบหลังบ้านแบบเรียลไทม์ระหว่างการประชุมผู้ถือหุ้นสด (e-AGM) คอยมอนิเตอร์การนับองค์ประชุม การประมวลผลคะแนนเสียง และแก้ปัญหาเฉพาะหน้าทางเทคนิค ส่งผลให้การประชุมของบริษัทจดทะเบียนกว่า 25-30+ บริษัท ดำเนินไปได้อย่างราบรื่นจนจบวาระ และสรุปผลคะแนนได้อย่างถูกต้องแม่นยำ 100%"
       ]
     }
+  },
+  {
+    company: { en: "18th Military District", th: "มณฑลทหารบกที่ 18" },
+    role: { en: "Military Instructor", th: "ครูฝึกทหาร" },
+    duration: { en: "MAY 2018 - JAN 2022", th: "พ.ค. 2561 - ม.ค. 2565" },
+    achievements: {
+      en: [
+        "Conducted comprehensive military training and evaluations in accordance with Royal Thai Army standards, fostering discipline and operational efficiency among personnel.",
+        "Executed rapid-response disaster relief operations, providing timely assistance and support to communities affected by natural disasters.",
+        "Provided high-level security and VIP protection during special royal missions, ensuring strict adherence to maximum security protocols.",
+        "Performed area patrols and maintained regional security to uphold public safety and operational readiness."
+      ],
+      th: [
+        "ดำเนินการฝึกอบรมและประเมินผลกำลังพลตามมาตรฐานของกองทัพบก เพื่อเสริมสร้างระเบียบวินัยและประสิทธิภาพในการปฏิบัติงาน",
+        "ปฏิบัติภารกิจบรรเทาสาธารณภัยและให้ความช่วยเหลือประชาชนในพื้นที่ที่ได้รับผลกระทบจากภัยพิบัติทางธรรมชาติอย่างทันท่วงที",
+        "ถวายความปลอดภัยและรักษาความสงบเรียบร้อยในภารกิจพิเศษต่างๆ อย่างรัดกุมและเป็นไปตามมาตรการรักษาความปลอดภัยสูงสุด",
+        "ปฏิบัติงานลาดตระเวนและรักษาความปลอดภัยในพื้นที่รับผิดชอบ เพื่อรักษาความสงบเรียบร้อยให้แก่ส่วนรวม"
+      ]
+    }
   }
 ];
 
