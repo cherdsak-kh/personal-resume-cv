@@ -32,8 +32,8 @@ export const personalInfo = {
   location: { en: "Ramkhamhaeng 24, Bang Kapi, Bangkok, TH", th: "รามคำแหง 24, บางกะปิ, กรุงเทพมหานคร ประเทศไทย" },
   profileImage: "/profile.jpg",
   summary: {
-    en: "Hi, I'm Benz (Cherdsak). From my time in the military (as an NCO) to working in tech, I have always worked full-time and studied at the same time. I started by studying law, but soon found that what I truly love and do best is IT, something I grew up with and learned by trying and fixing things on my own. I then switched to study Computer Science and began working seriously in the tech field. Starting in IT support, helping and talking to users taught me what people really need, which I later used to build full-stack web applications for both frontend and backend. I never stop learning, and I want to use my skills to help the team and make work run as smoothly as possible.",
-    th: "สวัสดีครับ ผมเบนซ์ครับ ช่วงชีวิตการทำงานตั้งแต่รับราชการทหาร (นายสิบ) จนก้าวสู่วงการไอที ผมทำงานประจำควบคู่ไปกับการเรียนมาโดยตลอด จากการเรียนด้านกฎหมาย (นิติศาสตร์) สู่การค้นพบสิ่งที่ตัวเองชอบและถนัดจริงๆ คืองานด้านไอที ซึ่งผมมีความคุ้นเคยมาตั้งแต่เด็ก และผ่านการลองผิดลองถูกมานับครั้งไม่ถ้วนจนเป็นประสบการณ์มาจนถึงทุกวันนี้ ผมจึงเปลี่ยนมาเรียนในสาขาวิชาวิทยาการคอมพิวเตอร์ พร้อมกับเริ่มทำงานในสายไอทีอย่างจริงจัง โดยเริ่มจากงานซัพพอร์ตไอทีที่ได้ช่วยเหลือและพูดคุยกับผู้ใช้งาน ทำให้ผมเข้าใจความต้องการของผู้ใช้งาน ก่อนจะต่อยอดมาสู่การพัฒนาเว็บแอปพลิเคชันทั้งหน้าบ้านและหลังบ้าน ผมไม่เคยหยุดพัฒนาตัวเองและตั้งใจนำความรู้ที่มีมาช่วยแบ่งเบาภาระงาน เพื่อให้ทุกคนในทีมและบริษัททำงานได้อย่างราบรื่นที่สุดครับ"
+    en: "Hi, I'm Benz. I have worked and studied simultaneously since my military days, eventually transitioning from law to Computer Science to pursue my lifelong passion for IT. Progressing from IT support with deep user empathy to full-stack web development, I am ready to use my skills to support the team and ensure smooth company operations.",
+    th: "สวัสดีครับ ผมเบนซ์ครับ ผมทำงานควบคู่กับการเรียนมาตลอดตั้งแต่สมัยรับราชการทหาร จนตัดสินใจเปลี่ยนจากสายนิติศาสตร์มาเรียนวิทยาการคอมพิวเตอร์ เพื่อทำสิ่งที่ชอบและคุ้นเคยมาตั้งแต่เด็กอย่างจริงจัง จากงานซัพพอร์ตที่เข้าใจคนใช้งานจริง สู่การพัฒนาเว็บแอปพลิเคชันทั้งหน้าบ้านและหลังบ้าน ผมพร้อมนำทักษะที่มีมาช่วยแบ่งเบาภาระทีม เพื่อให้งานของบริษัทราบรื่นที่สุดครับ"
   },
   email: "cherd8524@gmail.com",
   phone: "081-116-8524",
@@ -81,14 +81,13 @@ export const skills: Skill[] = [
   // Tools
   { name: "Git, GitHub, GitLab", category: "Tools" },
   { name: "Postman", category: "Tools" },
-  { name: "Swagger / OpenAPI", category: "Tools" },
-  { name: "Docker", category: "Tools" }
+  { name: "Swagger / OpenAPI", category: "Tools" }
 ];
 
 export const experiences: Experience[] = [
   {
-    company: { en: "Freelance (Tha Khlong 1 Municipal School)", th: "ฟรีแลนซ์ (โรงเรียนเทศบาลท่าโขลง 1)" },
-    role: { en: "Freelance Full Stack Developer", th: "Freelance Full Stack Developer" },
+    company: { en: "Freelance", th: "ฟรีแลนซ์" },
+    role: { en: "Full Stack Developer", th: "Full Stack Developer" },
     duration: { en: "APR 2026 - PRESENT", th: "เม.ย. 2569 - ปัจจุบัน" },
     achievements: {
       en: [
@@ -166,25 +165,6 @@ export const experiences: Experience[] = [
         "ควบคุมและดูแลระบบหลังบ้านแบบเรียลไทม์ระหว่างการประชุมผู้ถือหุ้นสด (e-AGM) คอยมอนิเตอร์การนับองค์ประชุม การประมวลผลคะแนนเสียง และแก้ปัญหาเฉพาะหน้าทางเทคนิค ส่งผลให้การประชุมของบริษัทจดทะเบียนกว่า 25-30+ บริษัท ดำเนินไปได้อย่างราบรื่นจนจบวาระ และสรุปผลคะแนนได้อย่างถูกต้องแม่นยำ 100%"
       ]
     }
-  },
-  {
-    company: { en: "18th Military District", th: "มณฑลทหารบกที่ 18" },
-    role: { en: "Military Instructor", th: "ครูฝึกทหาร" },
-    duration: { en: "MAY 2018 - JAN 2022", th: "พ.ค. 2561 - ม.ค. 2565" },
-    achievements: {
-      en: [
-        "Conducted comprehensive military training and evaluations in accordance with Royal Thai Army standards, fostering discipline and operational efficiency among personnel.",
-        "Executed rapid-response disaster relief operations, providing timely assistance and support to communities affected by natural disasters.",
-        "Provided high-level security and VIP protection during special royal missions, ensuring strict adherence to maximum security protocols.",
-        "Performed area patrols and maintained regional security to uphold public safety and operational readiness."
-      ],
-      th: [
-        "ดำเนินการฝึกอบรมและประเมินผลกำลังพลตามมาตรฐานของกองทัพบก เพื่อเสริมสร้างระเบียบวินัยและประสิทธิภาพในการปฏิบัติงาน",
-        "ปฏิบัติภารกิจบรรเทาสาธารณภัยและให้ความช่วยเหลือประชาชนในพื้นที่ที่ได้รับผลกระทบจากภัยพิบัติทางธรรมชาติอย่างทันท่วงที",
-        "ถวายความปลอดภัยและรักษาความสงบเรียบร้อยในภารกิจพิเศษต่างๆ อย่างรัดกุมและเป็นไปตามมาตรการรักษาความปลอดภัยสูงสุด",
-        "ปฏิบัติงานลาดตระเวนและรักษาความปลอดภัยในพื้นที่รับผิดชอบ เพื่อรักษาความสงบเรียบร้อยให้แก่ส่วนรวม"
-      ]
-    }
   }
 ];
 
@@ -203,11 +183,6 @@ export const educations: Education[] = [
     institution: { en: "Ayutthayanusorn School", th: "โรงเรียนอยุธยานุสรณ์" },
     degree: { en: "High School (M.6) (Mathematics-English Program)", th: "มัธยมศึกษาตอนปลาย (ม.6) (สายการเรียนคณิตศาสตร์-ภาษาอังกฤษ)" },
     duration: { en: "Graduated 2017", th: "สำเร็จการศึกษาปี 2560" }
-  },
-  {
-    institution: { en: "Wang Noi Witthayaphoom School", th: "โรงเรียนวังน้อยวิทยาภูมิ" },
-    degree: { en: "Middle School (M.3)", th: "ม.3" },
-    duration: { en: "Graduated 2014", th: "จบการศึกษา 2557" }
   }
 ];
 
